@@ -74,14 +74,14 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 
 });
 
-var config = fs.readFileSync('private/sample.json');
+var config = fs.readFileSync('private/awsaccess.json');
 
 var s3 = require('gulp-s3-upload')(config);
 
 gulp.task("upload-content-types", function() {
     gulp.src("./dist/contentTypes/**")
         .pipe(s3({
-            Bucket: 'bucket/folder/subfolder', //  Required
+            Bucket: 'dev-solutions/maic/DynamicContentTypes', //  Required
             ACL:    'public-read'       //  Needs to be user-defined
         }, {
             // S3 Constructor Options, ie:
