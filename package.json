@@ -10,11 +10,14 @@
   "main": "src/",
   "author": "Amplience",
   "dependencies": {
+    "aws-sdk": "^2.329.0",
     "cms-javascript-sdk": "amplience/cms-javascript-sdk#2d7cb9d",
+    "content-types": "elmikegonzalez/dc-accelerators-content-types#5dccd0c",
+    "gulp-logger": "0.0.2",
+    "gulp-s3-upload": "^1.7.0",
     "handlebars": "4.0.5",
     "lory.js": "2.2.1",
-    "showdown": "1.7.1",
-    "content-types": "amplience/dc-accelerators-content-types#49428b8"
+    "showdown": "1.7.1"
   },
   "devDependencies": {
     "del": "3.0.0",
