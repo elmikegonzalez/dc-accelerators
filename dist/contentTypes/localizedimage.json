@@ -1,0 +1,47 @@
+{
+   "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
+   "id":"https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/localizedimage.json",
+   "title":"Localized Image",
+   "description":"Localized Image",
+   "type":"object",
+   "allOf":[
+      {
+         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      }
+   ],
+   "propertyOrder":[
+     "image"
+   ],
+   "properties":{
+      "background":{
+         "allOf":[
+            {
+               "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            },
+            {
+               "properties":{
+                  "values":{
+                     "items":{
+                        "properties":{
+                           "value":{
+                              "title":"Background image or video",
+                              "description":"The background media of this banner",
+                              "type":"object",
+                              "anyOf":[
+                                 {
+                                    "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                                 },
+                                 {
+                                    "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   }
+}
