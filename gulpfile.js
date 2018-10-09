@@ -15,6 +15,8 @@ var pump = require('pump');
 var processhtml = require('gulp-processhtml');
 var del = require('del');
 var concat = require('gulp-concat');
+var logger = require('gulp-logger');
+var fs = require('fs');
 
 var insert = require('gulp-insert');
 var addSrc = require('gulp-add-src');
@@ -70,6 +72,22 @@ gulp.task('addContentTypes', ['build'], function (cb) {
         cb(null);
     }, 500)
 
+});
+
+var config = fs.readFileSync('private/sample.json');
+
+var s3 = require('gulp-s3-upload')(config);
+
+gulp.task("upload-content-types", function() {
+    gulp.src("./dist/contentTypes/**")
+        .pipe(s3({
+            Bucket: 'bucket/folder/subfolder', //  Required
+            ACL:    'public-read'       //  Needs to be user-defined
+        }, {
+            // S3 Constructor Options, ie:
+            maxRetries: 5
+        }))
+    ;
 });
 
 gulp.task('addDependencies', ['build', 'addContentTypes'], function () {
@@ -382,6 +400,16 @@ gulp.task('copy-node-modules', function () {
         .pipe(gulp.dest('dist/reusable'));
 });
 
+gulp.task('copy-fonts',function(){
+  console.log("Moving fonts into dist folder");
+  return gulp
+        .src(['src/renders/**/*.woff2',
+        'src/renders/**/*.eot',
+        'src/renders/**/*.ttf'
+      ], {base: './src/'})
+        .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('addLoryLicense', ['copy-node-modules'], function () {
     return gulp
         .src('node_modules/lory.js/LICENSE')
@@ -433,6 +461,7 @@ gulp.task(
         'del',
         'renders-build',
         'copy-node-modules',
+        'copy-fonts',
         'addLoryLicense',
         'addShowdownLicense',
         'reusable-js-min'
