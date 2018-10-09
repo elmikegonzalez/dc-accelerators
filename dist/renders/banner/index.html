@@ -7,17 +7,41 @@
     <link rel="stylesheet" href="../../../dist/renders/banner/banner.min.css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
-    <style>
+    <!-- <style>
         * {
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-    </style>
+    </style> -->
+    <style type="text/css">
+
+    @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=be6efb35-22e4-449f-aaf7-c1712be90ad8");
+        @font-face{
+            font-family:"DIN Next LT W01 Medium";
+            src:url("Fonts/c6dbdd54-50f5-472a-8b74-0e98ef77e33e.eot?#iefix");
+            src:url("Fonts/c6dbdd54-50f5-472a-8b74-0e98ef77e33e.eot?#iefix") format("eot"),url("Fonts/afabdfcf-432c-49b4-a496-0e5051e87fa9.woff2") format("woff2"),url("Fonts/611ea865-db7e-4c05-94b8-bd1675c90576.woff") format("woff"),url("Fonts/e65314e4-c389-45b8-99a9-26ab6aef066c.ttf") format("truetype");
+        }
+        @font-face{
+            font-family:"DINNextW01-CondensedMed";
+            src:url("Fonts/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix");
+            src:url("Fonts/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?#iefix") format("eot"),url("Fonts/76b8cda6-0ded-4197-acab-e314297eb90f.woff2") format("woff2"),url("Fonts/2613a064-2962-44af-ae6f-3640e06e8dc4.woff") format("woff"),url("Fonts/2889b152-497e-4ea3-a90d-02854d136a8d.ttf") format("truetype");
+        }
+        @font-face{
+            font-family:"DIN Next LT W01 Medium Cond It";
+            src:url("Fonts/14476c1d-0c32-41d2-aa6d-9afe95f0149f.eot?#iefix");
+            src:url("Fonts/14476c1d-0c32-41d2-aa6d-9afe95f0149f.eot?#iefix") format("eot"),url("Fonts/d2297395-21f1-45d2-9192-2e75249cb766.woff2") format("woff2"),url("Fonts/81b35f3b-6458-4bb3-8b9f-162e5cd2adb9.woff") format("woff"),url("Fonts/e711e947-649a-4b37-a2b0-175b75ac03e5.ttf") format("truetype");
+        }
+
+        </style>
 </head>
 <body>
-
+  <!-- <div class="fontdisplay">
+  <div style="font-family:'DINNextW01-CondensedMed';"> DIN® Next W01 </div>
+  <div style="font-family:'DIN Next LT W01 Medium Cond It';"> DIN® Next W01 Medium Condensed Italic </div>
+  <div style="font-family:'DIN Next LT W01 Medium';"> DIN® Next W01 Medium </div>
+  </div> -->
 <div class="js_banner_wrap"></div>
 
 <script src="../../reusable/cms-javascript-sdk.min.js"></script>
@@ -40,11 +64,17 @@
     AmpCa.utils.getCaData({
         auth: {
             baseUrl: 'https://c1.adis.ws',
-            id: '04125527-a0b0-415e-9b83-0791d7669638',
-            store: 'csdemo'
+            // id: '33da0a6a-d04a-4347-9304-75f94c2eb64b',
+            // id: '0fc0414e-5eec-4084-a662-30f850d021c7',
+            id: 'eb7eceb7-bf71-42a2-94e9-7e4314ec18f3',
+            // id: 'bd6bab9f-1203-4816-849d-c005f53a2fec',
+            store: 'mgonzalez'
+            //csdemo
+            // id:'04125527-a0b0-415e-9b83-0791d7669638',
+            // store: 'csdemo'
         },
         callback: function (data) {
-            console.log(data[0]);
+            //console.log(data[0]);
 
             var template = Handlebars.template(AmpCa.templates.banner);
             document.querySelectorAll(".js_banner_wrap")[0].innerHTML = template(data[0]);

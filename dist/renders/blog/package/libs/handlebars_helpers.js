@@ -60,11 +60,15 @@
         addTemplateClassname
       ) {
         var context = context instanceof Array ? context[0] : context;
+        console.log(context);
 
         var parsedName = context['_meta']['schema']
           .match(/(\/\w+)/g)
           .splice(-1)[0]
           .replace('/', '');
+
+        console.log(parsedName);
+
         var matchedTemplate;
         for (var x in Handlebars.partials) {
           if (parsedName.toLowerCase() === x.toLowerCase()) {
@@ -205,6 +209,7 @@
           roundel[0].roundel.name
         ) {
           var roundelParams = [];
+          var opacityParam;
           var imageRoundelIndex;
           for (var x = 0; x < roundel.length; x++) {
             var roundelParam = '';
@@ -225,6 +230,10 @@
                 roundelParam = 'p4_img=';
                 imageRoundelIndex = 4;
                 break;
+              case 'Middle Center':
+                roundelParam = 'p5_img=';
+                imageRoundelIndex = 5;
+                break;
             }
 
             var roundelRatio = roundel[x].roundelRatio;
@@ -234,8 +243,14 @@
                 ? '&roundelRatio' + imageRoundelIndex + '=' + roundelRatio
                 : '');
             roundelParams.push(roundelParam);
-          }
 
+            var opacity = roundel[x].opacity;
+            opacityParam +=
+              (opacity
+                ? '&opacity' + imageRoundelIndex + '=' + opacity
+                : '');
+            roundelParams.push(opacityParam);
+          }
           return roundelParams.join('&');
         } else {
           return '';
@@ -284,7 +299,8 @@
           this.roundel[0] &&
           this.roundel[0].roundel &&
           this.roundel[0].roundelPosition &&
-          this.roundel[0].roundelRatio
+          this.roundel[0].roundelRatio &&
+          this.roundel[0].opacity
         ) {
           return opts.fn(this);
         } else {
