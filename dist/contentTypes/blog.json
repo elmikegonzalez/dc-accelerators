@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/blog.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/blog.json",
   "title": "Blog Accelerator",
   "description": "Blog Accelerator",
   "allOf": [
@@ -22,7 +22,7 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/snippet.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/snippet.json"
         }
       ]
     },
@@ -45,12 +45,12 @@
               "contentType": {
                 "title": "Content",
                 "enum": [
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/banner.json",
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json",
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/video.json",
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/text.json",
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/cardlist.json",
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/blog.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/banner.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/video.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/text.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/cardlist.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/blog.json"
                 ]
               }
             }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/banner.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/banner.json",
   "title": "Banner Accelerator",
   "description": "Banner Accelerator",
   "allOf": [
@@ -19,7 +19,6 @@
     "textColour",
     "bannerColor",
     "bannerOpacity",
-    "style",
     "stackMobileLayout"
   ],
   "type": "object",
@@ -36,7 +35,7 @@
               "contentType": {
                 "title": "image",
                 "enum": [
-                  "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/image.json"
                 ]
               }
             }
@@ -73,7 +72,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/link.json"
         }
       ]
     },
@@ -111,13 +110,6 @@
       "description": "Enter a value between 0 and 1 (e.g. 0.3)",
       "minimum": 0,
       "maximum": 1.01
-    },
-    "style": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 100,
-      "title": "Style",
-      "description": "Add classname for CSS styling"
     },
     "stackMobileLayout": {
       "type": "boolean",
