@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/card.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/card.json",
   "title": "Card Accelerator",
   "description": "Card Accelerator",
   "allOf": [
@@ -29,7 +29,7 @@
             "contentType": {
               "title": "image",
               "enum": [
-                "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/image.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/image.json"
               ]
             }
           }
@@ -65,7 +65,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://dev-solutions.s3.amazonaws.com/DynamicContentTypes/Accelerators/link.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/link.json"
         }
       ]
     }
