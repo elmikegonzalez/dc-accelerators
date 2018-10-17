@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/blog.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/blog.json",
   "title": "Blog Accelerator",
   "description": "Blog Accelerator",
   "allOf": [
@@ -22,7 +22,7 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/snippet.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/snippet.json"
         }
       ]
     },
@@ -45,12 +45,12 @@
               "contentType": {
                 "title": "Content",
                 "enum": [
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/banner.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/image.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/video.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/text.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/cardlist.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/blog.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/banner.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/image.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/video.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/text.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/cardlist.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/blog.json"
                 ]
               }
             }

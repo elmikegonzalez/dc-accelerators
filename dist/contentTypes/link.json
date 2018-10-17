@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/link.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/link.json",
   "title": "Link Accelerator",
   "description": "Link Accelerator",
   "propertyOrder": [

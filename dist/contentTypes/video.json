@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/master/dist/contentTypes/video.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/video.json",
   "title": "Video Accelerator",
   "description": "Video Accelerator",
   "allOf": [
