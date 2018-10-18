@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/cardlist.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/cardlist.json",
   "title": "Card List Accelerator",
   "description": "Card List Accelerator",
   "allOf": [
@@ -39,7 +39,7 @@
               "contentType": {
                 "title": "Card Content",
                 "enum": [
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/card.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/card.json"
                 ]
               }
             }

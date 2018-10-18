@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/image.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/image.json",
   "title": "Image",
   "description": "Image Accelerator",
   "allOf": [
@@ -45,7 +45,7 @@
       "description": "Roundel Image",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch//dist/contentTypes/roundel.json"
+        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/roundel.json"
       },
       "minItems": 0,
       "maxItems": 4,
