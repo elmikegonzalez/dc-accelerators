@@ -12,7 +12,8 @@
     "image",
     "imageAltText",
     "seoText",
-    "roundel"
+    "roundel",
+    "display"
   ],
   "type": "object",
   "properties": {
@@ -50,6 +51,16 @@
       "minItems": 0,
       "maxItems": 4,
       "_interpolate": true
+    },
+    "display": {
+      "type": "string",
+      "title": "Display type",
+      "description": "How the image should display (Point of Interest, Hotspots, served staticaly (ie, animated GIF)",
+      "enum": [
+        "Point of Interest",
+        "Hotspots",
+        "Static"
+      ]
     }
   }
 }

@@ -1,11 +1,3 @@
 node_modules/*
 .idea
-#.gitignore
-#gulpfile.js
-#dist
-#private/
-#src/renders/banner/Fonts/
-#src/renders/blog/Fonts/
-#dist/renders/banner/Fonts/
-#dist/renders/blog/Fonts/
 private/awsaccess.json

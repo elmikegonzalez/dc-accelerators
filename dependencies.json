@@ -26,6 +26,11 @@
   ],
   "image": [],
   "localizedimage":[],
+  "localizedlink":[],
+  "localizedbanner": [
+    "localizedimage",
+    "localizedlink"
+  ],
   "card": [
     "image"
   ],

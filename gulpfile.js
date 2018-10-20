@@ -23,6 +23,8 @@ var addSrc = require('gulp-add-src');
 
 var connect = require('gulp-connect');
 var watch = require('gulp-watch');
+var config = JSON.parse(fs.readFileSync('private/awsaccess.json'));
+var s3 = require('gulp-s3-upload')(config);
 var name;
 
 var dependencies = require('./dependencies.json');
@@ -37,6 +39,9 @@ var excludeReusable = {
 };
 
 var reusable = './dist/reusable/*.js';
+
+
+
 
 var replace = function () {
     return es.map(function (file, cb) {
@@ -74,20 +79,21 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 
 });
 
-var config = fs.readFileSync('private/awsaccess.json');
-
-var s3 = require('gulp-s3-upload')(config);
-
 gulp.task("upload-content-types", function() {
     gulp.src("./dist/contentTypes/**")
         .pipe(s3({
             Bucket: 'dev-solutions/maic/DynamicContentTypes', //  Required
             ACL:    'public-read'       //  Needs to be user-defined
-        }, {
+        },
+          {
             // S3 Constructor Options, ie:
             maxRetries: 5
-        }))
-    ;
+        }));
+});
+
+gulp.task('update-content-types', function() {
+  gulp.src("./dist/contentTypes/**")
+    .pipe(gulp.dest('../content-types/Accelerators'));
 });
 
 gulp.task('addDependencies', ['build', 'addContentTypes'], function () {

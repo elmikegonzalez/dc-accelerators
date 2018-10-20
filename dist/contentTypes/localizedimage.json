@@ -13,7 +13,7 @@
      "image"
    ],
    "properties":{
-      "background":{
+      "image":{
          "allOf":[
             {
                "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
