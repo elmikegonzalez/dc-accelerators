@@ -1,0 +1,52 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/src/slots/page.json",
+    "title": "SFCC Content Slot - Flexible",
+    "description": "SFCC Content Slot - Flexible",
+    "type": "object",
+    "properties": {
+        "_environment": {
+            "type": "object",
+            "properties": {
+                "sfcc_slot": {
+                    "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/src/slots/sfcc-slot.json"
+                },
+                "sfcc_category_slot": {
+                    "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/src/slots/sfcc-category-slot.json"
+                }
+            }
+        },
+        "content": {
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "title": "Page Content",
+                            "enum": [
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/image.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/text.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/video.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/cardlist.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/banner.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/slider.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/splitblock.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/promobanner.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/externalblock.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/blog.json",
+                                "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/dist/contentTypes/homepage.json"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

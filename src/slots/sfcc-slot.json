@@ -1,0 +1,17 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-accelerators/v1.0.0-branch/src/slots/sfcc-slot.json",
+    "title": "SFCC Slot",
+    "description": "SFCC Slot",
+    "type": "object",
+    "properties": {
+        "slot_id": {
+            "type": "string"
+        }
+    }
+}
