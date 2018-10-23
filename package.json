@@ -11,15 +11,17 @@
   "author": "Amplience",
   "dependencies": {
     "cms-javascript-sdk": "amplience/cms-javascript-sdk#2d7cb9d",
+    "content-types": "amplience/dc-accelerators-content-types#49428b8",
     "handlebars": "4.0.5",
     "lory.js": "2.2.1",
+    "npm": "^6.4.1",
     "showdown": "1.7.1",
-    "content-types": "amplience/dc-accelerators-content-types#49428b8"
+    "wget": "0.0.1"
   },
   "devDependencies": {
     "del": "3.0.0",
     "event-stream": "^3.3.4",
-    "gulp": "3.9.1",
+    "gulp": "^3.9.1",
     "gulp-add-src": "^0.2.0",
     "gulp-autoprefixer": "4.0.0",
     "gulp-clean-css": "3.4.1",
