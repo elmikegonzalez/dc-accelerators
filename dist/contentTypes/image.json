@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/image.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/image.json",
   "title": "Image",
   "description": "Image Accelerator",
   "allOf": [
@@ -12,7 +12,9 @@
     "image",
     "imageAltText",
     "seoText",
-    "roundel"
+    "roundel",
+    "display",
+    "bgColor"
   ],
   "type": "object",
   "properties": {
@@ -45,11 +47,28 @@
       "description": "Roundel Image",
       "type": "array",
       "items": {
-        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/roundel.json"
+        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/roundel.json"
       },
       "minItems": 0,
-      "maxItems": 4,
+      "maxItems": 5,
       "_interpolate": true
+    },
+    "bgColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 6,
+      "title": "Background Color",
+      "description": "Enter a hex value for background color"
+    },
+    "display": {
+      "type": "string",
+      "title": "Display type",
+      "description": "How the image should display (Point of Interest, Hotspots, served staticaly (ie, animated GIF)",
+      "enum": [
+        "Point of Interest",
+        "Hotspots",
+        "Static"
+      ]
     }
   }
 }

@@ -59,15 +59,18 @@
                 context,
                 addTemplateClassname
             ) {
+                console.debug('templateChooser helper');
                 var context = context instanceof Array ? context[0] : context;
 
                 var parsedName = context['_meta']['schema']
                     .match(/(\/\w+)/g)
                     .splice(-1)[0]
                     .replace('/', '');
+                console.info(parsedName);
                 var matchedTemplate;
                 var templateName = 'acc-template-' + parsedName;
                 for (var x in Handlebars.partials) {
+                    console.debug(x.toLowerCase());
                     if ((templateName.toLowerCase() === x.toLowerCase()) || (parsedName.toLowerCase() === x.toLowerCase())) {
                         matchedTemplate = Handlebars.partials[x].length
                             ? Handlebars.partials[x]
@@ -168,6 +171,65 @@
                     '%': lvalue % rvalue
                 }[operator];
             });
+
+          /**
+           * Render a block when a comparison of the first and third
+           * arguments returns true. The second argument is
+           * the [arithemetic operator][operators] to use. You may also
+           * optionally specify an inverse block to render when falsy.
+           *
+           * @param `a`
+           * @param `operator` The operator to use. Operators must be enclosed in quotes: `">"`, `"="`, `"<="`, and so on.
+           * @param `b`
+           * @param {Object} `options` Handlebars provided options object
+           * @return {String} Block, or if specified the inverse block is rendered if falsey.
+           * @block
+           * @api public
+           */
+
+          Handlebars.registerHelper('compare',function(a, operator, b) {
+            /* eslint-disable eqeqeq */
+
+            if (arguments.length < 3) {
+              throw new Error('"compare" helper - expected 3 arguments');
+            }
+
+            var result;
+            switch (operator) {
+              case '==':
+                result = a == b;
+                break;
+              case '===':
+                result = a === b;
+                break;
+              case '!=':
+                result = a != b;
+                break;
+              case '!==':
+                result = a !== b;
+                break;
+              case '<':
+                result = a < b;
+                break;
+              case '>':
+                result = a > b;
+                break;
+              case '<=':
+                result = a <= b;
+                break;
+              case '>=':
+                result = a >= b;
+                break;
+              case 'typeof':
+                result = typeof a === b;
+                break;
+              default: {
+                throw new Error('helper {{compare}}: invalid operator: `' + operator + '`');
+              }
+            }
+
+            return result;
+          });
 
             Handlebars.registerHelper('bannerConfig', function (opts) {
                 var style = '';
@@ -361,6 +423,17 @@
                     return opts.inverse(this);
                 }
             });
+
+          Handlebars.registerHelper("debug", function(optionalValue) {
+            console.log("Current Context");
+            console.log("====================");
+            console.log(this);
+            if (optionalValue) {
+              console.log("Value");
+              console.log("====================");
+              console.log(optionalValue);
+            }
+          });
 
             Handlebars.registerHelper('roundelProperties', function (opts) {
                 if (

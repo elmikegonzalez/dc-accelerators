@@ -1,7 +1,7 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/text.json",
-  "title": "Text Acclerator",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/text.json",
+  "title": "Text Accelerator",
   "description": "Text Accelerator",
   "allOf": [
     {
@@ -9,7 +9,8 @@
     }
   ],
   "propertyOrder": [
-    "text"
+    "text",
+    "bgColor"
   ],
   "type": "object",
   "properties": {
@@ -20,6 +21,13 @@
       "description": "",
       "minLength": 0,
       "maxLength": 6000
+    },
+    "bgColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 6,
+      "title": "Background Color",
+      "description": "Enter a hex value for background color"
     }
   }
 }

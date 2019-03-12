@@ -22,9 +22,20 @@
     "splitBlock",
     "card",
     "cardList",
-    "image"
+    "image",
+    "link",
+    "blog",
+    "bloglist"
   ],
   "image": [],
+  "localizedimage":[
+    "image"
+  ],
+  "localizedlink":[],
+  "localizedbanner": [
+    "localizedimage",
+    "localizedlink"
+  ],
   "card": [
     "image"
   ],
@@ -36,13 +47,33 @@
   "slider": [
     "banner",
     "image",
-    "video"
+    "video",
+    "localizedbanner"
   ],
+  "text": [],
   "splitBlock": [
     "image",
     "video",
     "text"
   ],
-  "text": [],
-  "video": []
+  "localizedtext":[
+    "text"
+  ],
+  "video": [],
+  "link": [],
+  "snippet":[
+    "link"
+  ],
+  "content-settings": [
+    "image",
+    "link"
+  ],
+  "bloglist":[
+    "snippet"
+  ],
+  "hero-slot":[
+    "banner",
+    "slider",
+    "video"
+  ]
 }

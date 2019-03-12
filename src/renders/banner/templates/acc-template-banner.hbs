@@ -1,14 +1,14 @@
-<div class="amp-dc-banner js_dc_banner">
-    <div class="amp-dc-banner-pic-wrap">
+<div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner js_dc_banner">
+    <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-pic-wrap">
         {{templateChooser bannerImage}}
     </div>
-    <div class="amp-dc-banner-info-wrap
-    {{#if stackMobileLayout}}amp-dc-info-bottom{{/if}}
+    <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-info-wrap
+    {{#if stackMobileLayout}}{{#if style}}{{style}}{{/if}}-amp-dc-info-bottom{{/if}}
         {{#unless header}}
             {{#unless subheader}}
                 {{#unless description}}
                     {{#unless button.label}}
-                        amp-dc-hide
+                        {{#if style}}{{style}}-{{/if}}amp-dc-hide
                      {{/unless}}
                 {{/unless}}
             {{/unless}}
@@ -19,20 +19,19 @@
              {{#if textPositionTop}}top:{{textPositionTop}}%;{{/if}}"
     >
 
-        <div class="amp-dc-banner-info" data-opacity="{{bannerOpacity}}" data-color="{{bannerColor}}"
-             data-txtcolor="{{textColour}}" style="">
+        <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-info" id="opacity" style="{{#compare hideOverlay "==" false}}background:{{overlayColor}};opacity:{{overlayOpacity}};{{/compare}}{{#compare hideOverlay "==" true}}background:transparent;{{/compare}}">
             {{#if header}}
-                <div class="amp-dc-banner-header">{{header}}</div>
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-header" id="header" style="{{#if headerFontColor}}color:{{headerFontColor}};background:{{headerFontBackground}};{{/if}}">{{header}}</div>
             {{/if}}
             {{#if subheader}}
-                <div class="amp-dc-banner-subheader">{{subheader}}</div>
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-subheader" id="subheader" style="{{#if subheaderFontColor}}color:{{subheaderFontColor}}{{/if}}">{{subheader}}</div>
             {{/if}}
             {{#if description}}
-                <div class="amp-dc-banner-description">{{description}}</div>
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-description" id="description" style="{{#if descriptionFontColor}}color:{{descriptionFontColor}}{{/if}}">{{description}}</div>
             {{/if}}
             {{#if button.label}}
                 <a href="{{button.value}}"
-                   class="amp-dc-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+                   class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
             {{/if}}
         </div>
     </div>

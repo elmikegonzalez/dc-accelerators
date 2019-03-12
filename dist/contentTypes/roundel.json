@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/DC-accelerators-v2.0.0/dist/contentTypes/roundel.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/roundel.json",
   "title": "Roundel",
   "description": "Roundel Accelerator",
   "propertyOrder": [
@@ -16,9 +16,9 @@
     "roundelRatio": {
       "type": "number",
       "title": "Roundel Ratio",
-      "description": "A value between 0 and 10 e.g. 0.6",
+      "description": "A value between 0 and 1 e.g. 0.6",
       "minimum": 0,
-      "maximum": 10
+      "maximum": 1
     },
     "roundelPosition": {
       "type": "string",
@@ -26,7 +26,8 @@
         "Top Left",
         "Top Right",
         "Bottom Left",
-        "Bottom Right"
+        "Bottom Right",
+        "Middle Center"
       ],
       "title": "Roundel Position",
       "description": "Roundel Position"

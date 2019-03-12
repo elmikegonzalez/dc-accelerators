@@ -1,0 +1,30 @@
+{{#if (test this.[@type] (toRegex ".*/image")) ~}}
+    {{> acc-template-image this}}
+{{~/if}}
+{{#if (test this.[0].[@type] (toRegex ".*/image")) ~}}
+    {{> acc-template-image this.[0]}}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/externalblock")) ~}}
+    {{> externalBlock }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/cardlist")) ~}}
+    {{> cardList }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/card.json")) ~}}
+    {{> card }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/blog")) ~}}
+    {{> blog }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/bloglist")) ~}}
+    {{> bloglist }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/banner")) ~}}
+    {{> banner }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/homepage")) ~}}
+    {{> homepage }}
+{{~/if}}
+{{#if (test this.[@type] (toRegex ".*/link")) ~}}
+    {{> link }}
+{{~/if}}

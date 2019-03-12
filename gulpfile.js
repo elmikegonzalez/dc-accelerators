@@ -15,12 +15,16 @@ var pump = require('pump');
 var processhtml = require('gulp-processhtml');
 var del = require('del');
 var concat = require('gulp-concat');
+var logger = require('gulp-logger');
+var fs = require('fs');
 
 var insert = require('gulp-insert');
 var addSrc = require('gulp-add-src');
 
 var connect = require('gulp-connect');
 var watch = require('gulp-watch');
+var config = JSON.parse(fs.readFileSync('private/awsaccess.json'));
+var s3 = require('gulp-s3-upload')(config);
 var name;
 
 var dependencies = require('./dependencies.json');
@@ -80,6 +84,47 @@ gulp.task('addContentTypes', ['build'], function (cb) {
         cb(null);
     }, 500)
 
+});
+
+gulp.task("upload-content-types", function() {
+  gulp.src("./dist/contentTypes/**")
+    .pipe(s3({
+        Bucket: 'dev-solutions/maic/DynamicContentTypes/gnc', //  Required
+        ACL:    'public-read'       //  Needs to be user-defined
+      },
+      {
+        // S3 Constructor Options, ie:
+        maxRetries: 5
+      }));
+});
+
+gulp.task("upload-icons", function() {
+  gulp.src("./dist/icons/**")
+    .pipe(s3({
+        Bucket: 'dev-solutions/maic/Icons/gnc', //  Required
+        ACL:    'public-read'       //  Needs to be user-defined
+      },
+      {
+        // S3 Constructor Options, ie:
+        maxRetries: 5
+      }));
+});
+
+gulp.task("upload-content-slots", function() {
+  gulp.src("./dist/contentTypes/**")
+    .pipe(s3({
+        Bucket: 'dev-solutions/maic/DynamicContentSlots/gnc', //  Required
+        ACL:    'public-read'       //  Needs to be user-defined
+      },
+      {
+        // S3 Constructor Options, ie:
+        maxRetries: 5
+      }));
+});
+
+gulp.task('update-content-types', function() {
+  gulp.src("./dist/contentTypes/**")
+    .pipe(gulp.dest('../content-types/Accelerators'));
 });
 
 gulp.task('addDependencies', ['build', 'addContentTypes'], function () {
@@ -234,60 +279,106 @@ gulp.task('del', function () {
 });
 
 gulp.task('renders-html', function () {
-    return (
-        gulp
-            .src([
-                'src/renders/**/*.html',
-                '!src/renders/*/templates/*.html',
-                '!src/renders/**/visualisation.html',
-            ])
-            .pipe(processhtml())
-            //.pipe(htmlmin({collapseWhitespace: true}))
-            .pipe(gulp.dest('dist/renders'))
-    );
+  return (
+    gulp
+      .src([
+        'src/renders/**/*.html',
+        '!src/renders/*/templates/*.html',
+        '!src/renders/**/visualisation.html',
+        '!src/renders/**/visualization.html',
+        '!src/renders/**/visualization*.html'
+      ])
+      .pipe(processhtml())
+      //.pipe(htmlmin({collapseWhitespace: true}))
+      .pipe(gulp.dest('dist/renders'))
+  );
+});
+
+gulp.task('render-sass', function () {
+  console.log('Hello CSS!');
+  return (
+    gulp.src('src/renders/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in src/renders
+      .pipe(
+        sass({
+          outputStyle: 'expanded'
+        }).on('error', sass.logError)
+      )
+      .pipe(
+        autoprefixer({
+          browsers: ['last 2 versions'],
+          cascade: false
+        })
+      )
+      .pipe(
+        rename(function (path) {
+          name = path.dirname.slice(0, path.dirname.indexOf('sass') - 1);
+          path.dirname = name + '/package';
+          path.basename = name;
+          console.log(path.dirname);
+        })
+      )
+      .pipe(concat('styles.css'))
+      //.pipe(gulp.dest('dist/renders'))
+      // .pipe(sourcemaps.init())
+      //.pipe(cleanCSS())
+      // .pipe(sourcemaps.write())
+      //.pipe(
+      //    rename(function (path) {
+      //        name = path.dirname.slice(0, path.dirname.indexOf('package') - 1);
+      //        path.dirname = name;
+      //        path.basename = name + '.min';
+      //    })
+      //)
+      .pipe(gulp.dest('dist/renders'))
+      .pipe(
+        rename(function (path) {
+          path.dirname = path.dirname + '/package';
+        })
+      )
+    //.pipe(gulp.dest('dist/renders'))
+  );
 });
 
 gulp.task('renders-sass', function () {
-    return (
-        gulp
-            .src('src/renders/**/sass/*.scss')
-            .pipe(
-                sass({
-                    outputStyle: 'expanded'
-                }).on('error', sass.logError)
-            )
-            .pipe(
-                autoprefixer({
-                    browsers: ['last 2 versions'],
-                    cascade: false
-                })
-            )
-            .pipe(
-                rename(function (path) {
-                    name = path.dirname.slice(0, path.dirname.indexOf('sass') - 1);
-                    path.dirname = name + '/package';
-                    path.basename = name;
-                })
-            )
-            .pipe(gulp.dest('dist/renders'))
-            // .pipe(sourcemaps.init())
-            .pipe(cleanCSS())
-            // .pipe(sourcemaps.write())
-            .pipe(
-                rename(function (path) {
-                    name = path.dirname.slice(0, path.dirname.indexOf('package') - 1);
-                    path.dirname = name;
-                    path.basename = name + '.min';
-                })
-            )
-            .pipe(gulp.dest('dist/renders'))
-            .pipe(
-                rename(function (path) {
-                    path.dirname = path.dirname + '/package';
-                })
-            )
-            .pipe(gulp.dest('dist/renders'))
-    );
+  return (
+    gulp.src('src/renders/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in src/renders
+      .pipe(
+        sass({
+          outputStyle: 'expanded'
+        }).on('error', sass.logError)
+      )
+      .pipe(
+        autoprefixer({
+          browsers: ['last 2 versions'],
+          cascade: false
+        })
+      )
+      .pipe(
+        rename(function (path) {
+          name = path.dirname.slice(0, path.dirname.indexOf('sass') - 1);
+          path.dirname = name + '/package';
+          path.basename = name;
+        })
+      )
+      .pipe(gulp.dest('dist/renders'))
+      // .pipe(sourcemaps.init())
+      .pipe(cleanCSS())
+      // .pipe(sourcemaps.write())
+      .pipe(
+        rename(function (path) {
+          name = path.dirname.slice(0, path.dirname.indexOf('package') - 1);
+          path.dirname = name;
+          path.basename = name + '.min';
+        })
+      )
+      .pipe(gulp.dest('dist/renders'))
+      .pipe(
+        rename(function (path) {
+          path.dirname = path.dirname + '/package';
+        })
+      )
+      .pipe(gulp.dest('dist/renders'))
+  );
 });
 
 gulp.task('renders-templates', function () {
@@ -343,19 +434,20 @@ gulp.task('renders-js-copy', function () {
 
 
 gulp.task('renders-files-copy', function () {
-    return gulp
-        .src([
-            'src/renders/**/visualisation.html',
-            'src/renders/**/templates/*.html'
-        ])
-        .pipe(replaceVisualization())
-        .pipe(
-            rename(function (path) {
-                var name = path.dirname.replace('/templates', '');
-                path.dirname = name + '/package';
-            })
-        )
-        .pipe(gulp.dest('dist/renders'));
+  return gulp
+    .src([
+      'src/renders/**/visualisation.html',
+      'src/renders/**/visualization.html',
+      'src/renders/**/visualization*.html',
+      'src/renders/**/templates/*.html'
+    ])
+    .pipe(
+      rename(function (path) {
+        var name = path.dirname.replace('/templates', '');
+        path.dirname = name + '/package';
+      })
+    )
+    .pipe(gulp.dest('dist/renders'));
 });
 
 gulp.task('renders-js-min', function (cb) {
@@ -401,6 +493,16 @@ gulp.task('copy-node-modules', function () {
         .pipe(gulp.dest('dist/reusable'));
 });
 
+gulp.task('copy-fonts',function(){
+  console.log("Moving fonts into dist folder");
+  return gulp
+    .src(['src/renders/**/*.woff2',
+      'src/renders/**/*.eot',
+      'src/renders/**/*.ttf'
+    ], {base: './src/'})
+    .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('addLoryLicense', ['copy-node-modules'], function () {
     return gulp
         .src('node_modules/lory.js/LICENSE')
@@ -436,6 +538,7 @@ gulp.task(
     'renders-build',
     [
         'renders-html',
+        'render-sass',
         'renders-sass',
         'renders-templates',
         'renders-js-copy',
@@ -452,6 +555,7 @@ gulp.task(
         'del',
         'renders-build',
         'copy-node-modules',
+        'copy-fonts',
         'copy-icons',
         'addLoryLicense',
         'addShowdownLicense',
@@ -477,7 +581,7 @@ gulp.task(
 
 gulp.task('server', function () {
     return connect.server({
-        port: 9100,
+        port: 3000,
         hostname: '0.0.0.0',
         livereload: true,
         debug: true
