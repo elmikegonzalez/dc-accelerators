@@ -89,7 +89,7 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 gulp.task("upload-content-types", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentTypes/gnc', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentTypes/rh', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -101,7 +101,7 @@ gulp.task("upload-content-types", function() {
 gulp.task("upload-icons", function() {
   gulp.src("./dist/icons/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/Icons/gnc', //  Required
+        Bucket: 'dev-solutions/maic/Icons/rh', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -113,7 +113,7 @@ gulp.task("upload-icons", function() {
 gulp.task("upload-content-slots", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentSlots/gnc', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentSlots/rh', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {

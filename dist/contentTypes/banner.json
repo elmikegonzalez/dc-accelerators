@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/banner.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/banner.json",
   "title": "Banner Accelerator",
   "description": "Banner Accelerator",
   "allOf": [
@@ -10,8 +10,8 @@
   ],
   "propertyOrder": [
     "bannerImage",
-    "subheader",
     "header",
+    "subheader",
     "description",
     "button",
     "textPositionLeft",
@@ -36,7 +36,7 @@
               "contentType": {
                 "title": "image",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/image.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/image.json"
                 ]
               }
             }
@@ -74,7 +74,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/gnc/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/link.json"
         }
       ]
     },

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/bloglist.json",
+  "title": "Blog Listing Page",
+  "description": "Content Type to populate a blog listing page",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string",
+      "title": "Content Asset ID",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "blogs": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "content",
+                "enum": [
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/blog.json"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 6,
+      "title": "Blogs",
+      "description": "Select or create a blog.  The snippet will be used to populate the blog list"
+    }
+  },
+  "propertyOrder": [
+    "assetId",
+    "blogs"
+  ],
+  "required": [
+    "assetId"
+  ]
+}
