@@ -25,6 +25,7 @@
               "contentType": {
                 "title": "Content Types",
                 "enum": [
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/banner.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/slider.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/promobanner.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/video.json",
@@ -32,7 +33,10 @@
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/externalblock.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/splitblock.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/cardlist.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/image.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/link.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/blog.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/bloglist.json"
                 ]
               }
             }
