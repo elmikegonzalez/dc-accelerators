@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/video.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/video.json",
   "title": "Video Accelerator",
   "description": "Video Accelerator",
   "allOf": [

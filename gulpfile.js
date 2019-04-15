@@ -89,7 +89,7 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 gulp.task("upload-content-types", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentTypes/rh', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentTypes/loreal', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -101,7 +101,7 @@ gulp.task("upload-content-types", function() {
 gulp.task("upload-icons", function() {
   gulp.src("./dist/icons/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/Icons/rh', //  Required
+        Bucket: 'dev-solutions/maic/Icons/loreal', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -113,7 +113,7 @@ gulp.task("upload-icons", function() {
 gulp.task("upload-content-slots", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentSlots/rh', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentSlots/loreal', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -295,7 +295,7 @@ gulp.task('renders-html', function () {
 });
 
 gulp.task('render-sass', function () {
-  console.log('Hello CSS!');
+  console.log('Render Saas!');
   return (
     gulp.src('src/renders/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in src/renders
       .pipe(
@@ -340,6 +340,7 @@ gulp.task('render-sass', function () {
 });
 
 gulp.task('renders-sass', function () {
+  console.log('Renders Saas!');
   return (
     gulp.src('src/renders/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in src/renders
       .pipe(
@@ -439,6 +440,7 @@ gulp.task('renders-files-copy', function () {
       'src/renders/**/visualisation.html',
       'src/renders/**/visualization.html',
       'src/renders/**/visualization*.html',
+      'src/renders/**/visualisation*.html',
       'src/renders/**/templates/*.html'
     ])
     .pipe(

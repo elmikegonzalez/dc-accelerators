@@ -75,5 +75,33 @@
     "banner",
     "slider",
     "video"
+  ],
+  "dc-slot-example":[
+    "banner",
+    "slider",
+    "video",
+    "text",
+    "splitblock",
+    "image",
+    "cardlist",
+    "externalblock",
+    "homepage",
+    "promobanner",
+    "blog",
+    "blogist"
+  ],
+  "page-siteid-localized":[
+    "banner",
+    "slider",
+    "video",
+    "text",
+    "splitblock",
+    "image",
+    "cardlist",
+    "externalblock",
+    "homepage",
+    "promobanner",
+    "blog",
+    "blogist"
   ]
 }

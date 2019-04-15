@@ -1,0 +1,38 @@
+<div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner js_dc_banner">
+    <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-pic-wrap">
+        {{templateChooser bannerImage}}
+    </div>
+    <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-info-wrap
+    {{#if stackMobileLayout}}{{#if style}}{{style}}{{/if}}-amp-dc-info-bottom{{/if}}
+        {{#unless header}}
+            {{#unless subheader}}
+                {{#unless description}}
+                    {{#unless button.label}}
+                        {{#if style}}{{style}}-{{/if}}amp-dc-hide
+                     {{/unless}}
+                {{/unless}}
+            {{/unless}}
+        {{/unless}}"
+         data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}"
+         style="
+             {{#if textPositionLeft}}left:{{textPositionLeft}}%;{{/if}}
+             {{#if textPositionTop}}top:{{textPositionTop}}%;{{/if}}"
+    >
+
+        <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-info" id="opacity" style="{{#compare hideOverlay "==" false}}background:{{overlayColor}};opacity:{{overlayOpacity}};{{/compare}}{{#compare hideOverlay "==" true}}background:transparent;{{/compare}}">
+            {{#if header}}
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-header" id="header" style="{{#if headerFontColor}}color:{{headerFontColor}};background:{{headerFontBackground}};{{/if}}">{{header}}</div>
+            {{/if}}
+            {{#if subheader}}
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-subheader" id="subheader" style="{{#if subheaderFontColor}}color:{{subheaderFontColor}}{{/if}}">{{subheader}}</div>
+            {{/if}}
+            {{#if description}}
+                <div class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-description" id="description" style="{{#if descriptionFontColor}}color:{{descriptionFontColor}}{{/if}}">{{description}}</div>
+            {{/if}}
+            {{#if button.label}}
+                <a href="{{button.value}}"
+                   class="{{#if style}}{{style}}-{{/if}}amp-dc-banner-button {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+            {{/if}}
+        </div>
+    </div>
+</div>

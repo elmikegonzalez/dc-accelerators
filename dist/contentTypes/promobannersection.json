@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/promobannersection.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/promobannersection.json",
   "title": "Promo Banner Section",
   "description": "Promo Banner Section",
   "allOf": [
@@ -70,7 +70,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/link.json"
         }
       ]
     }

@@ -7,7 +7,16 @@
   }
 
   .amp-dc-text {
-    margin: 0 25px;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 19px;
+    line-height: 26px;
+    font-family: trade-gothic-next, sans-serif;
   }
 
   .amp-dc-splitBlock {
@@ -34,8 +43,8 @@
 
   .header-content {
     margin: 10px 50px;
-    overflow: hidden;
-    height: 40px;
+    //overflow: hidden;
+    //height: 40px;
   }
 
   .logo {

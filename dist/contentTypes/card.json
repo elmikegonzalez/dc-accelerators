@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/card.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/card.json",
   "title": "Card Accelerator",
   "description": "Card Accelerator",
   "allOf": [
@@ -28,7 +28,7 @@
             "contentType": {
               "title": "image",
               "enum": [
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/image.json"
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json"
               ]
             }
           }
@@ -57,7 +57,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/link.json"
         }
       ]
     }

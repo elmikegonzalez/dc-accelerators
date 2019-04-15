@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/splitblock.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/splitblock.json",
   "title": "Split Block Accelerators",
   "description": "Split Block Accelerator",
   "allOf": [
@@ -26,9 +26,9 @@
               "contentType": {
                 "title": "content",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/text.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/video.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/text.json"
                 ]
               }
             }

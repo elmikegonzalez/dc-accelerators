@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/cardlist.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/cardlist.json",
   "title": "Card List Accelerator",
   "description": "Card List Accelerator",
   "allOf": [
@@ -39,7 +39,7 @@
               "contentType": {
                 "title": "Card Content",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/rh/card.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/card.json"
                 ]
               }
             }

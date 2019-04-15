@@ -1,0 +1,53 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/dc-slot-example.json",
+  "title": "dc-slot-example",
+  "description": "dc-slot-example description",
+  "type": "object",
+  "properties": {
+    "_environment": {
+      "type": "object",
+      "properties": {
+        "sfcc_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_slot"
+        },
+        "sfcc_category_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_category_slot"
+        }
+      }
+    },
+    "content": {
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "Page Content",
+              "enum": [
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/banner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/slider.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/video.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/text.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/splitblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/cardlist.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/externalblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/homepage.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/promobanner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/blog.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/bloglist.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

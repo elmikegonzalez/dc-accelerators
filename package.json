@@ -8,11 +8,11 @@
   },
   "description": "Amplience DC Frontend modules",
   "main": "src/",
-  "author": "miguelg@Amplience",
+  "author": "miguelgonzalez",
   "dependencies": {
     "aws-sdk": "^2.329.0",
     "cms-javascript-sdk": "amplience/cms-javascript-sdk#2d7cb9d",
-    "dc-accelerators-content-types": "elmikegonzalez/dc-accelerators-content-types#demo/rh",
+    "dc-accelerators-content-types": "elmikegonzalez/dc-accelerators-content-types#demo/loreal",
     "gulp-logger": "0.0.2",
     "gulp-s3-upload": "^1.7.0",
     "handlebars": "4.0.5",

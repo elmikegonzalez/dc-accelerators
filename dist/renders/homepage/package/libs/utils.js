@@ -79,6 +79,7 @@
                 params.auth.id + '?template=' +
                 params.auth.templateName +
                 '&v=' + Date.now());
+                console.info('HTML service: https://'+url);
 
             return this.baseAjax({
                 url: url,
