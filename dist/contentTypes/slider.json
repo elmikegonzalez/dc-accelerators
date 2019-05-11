@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/slider.json",
-  "title": "Slider Accelerator",
-  "description": "Slider Accelerator",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/slider.json",
+  "title": "Slider",
+  "description": "Contains Images, Videos & Banners to produce a slider / carousel",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -10,8 +10,6 @@
   ],
   "propertyOrder": [
     "slides",
-    "loadingColour",
-    "loadingPosition",
     "loop",
     "navigationDots"
   ],
@@ -29,9 +27,9 @@
               "contentType": {
                 "title": "slides",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/banner.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/video.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/banner.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/image.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/video.json"
                 ]
               }
             }
@@ -39,19 +37,19 @@
         ]
       },
       "title": "Slides",
-      "description": "",
+      "description": "Select from banners, images and videos to use in this slider",
       "minItems": 1,
       "maxItems": 8
     },
     "loop": {
       "type": "boolean",
       "title": "Loop slider",
-      "description": ""
+      "description": "Infinite slide looping"
     },
     "navigationDots": {
       "type": "boolean",
       "title": "Navigation Dots",
-      "description": ""
+      "description": "Display Navigation dots?"
     }
   }
 }

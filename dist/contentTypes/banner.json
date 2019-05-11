@@ -1,159 +1,149 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/banner.json",
-  "title": "Banner Accelerator",
-  "description": "Banner Accelerator",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/banner.json",
+  "title": "Banner",
+  "description": "A reusable content type for banner content",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
   ],
   "propertyOrder": [
-    "bannerImage",
+    "img",
     "header",
-    "headerFontColor",
-    "headerFontBackground",
     "subheader",
-    "subheaderFontColor",
+    "analyticsEventLabel",
     "description",
-    "descriptionFontColor",
     "button",
-    "textPositionLeft",
-    "textPositionTop",
-    "overlayColor",
-    "overlayOpacity",
+    "alignment",
+    "percH",
+    "percV",
+    "style",
     "stackMobileLayout",
-    "hideOverlay",
-    "style"
+    "hideBG",
+    "contentImg"
   ],
+  "required": ["analyticsEventLabel"],
   "type": "object",
   "properties": {
-    "bannerImage": {
-      "type": "array",
-      "items": {
-        "allOf": [
-          {
-            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-          },
-          {
-            "properties": {
-              "contentType": {
-                "title": "image",
-                "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json"
-                ]
-              }
-            }
-          }
-        ]
-      },
-      "maxItems": 1,
-      "title": "Banner Image",
-      "description": "Select or create an image content"
-    },
-    "subheader": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255,
-      "title": "Subheader",
-      "description": "add subheader"
-    },
-    "header": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255,
-      "title": "Header",
-      "description": "add header"
-    },
-    "description": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 2000,
-      "title": "Description",
-      "description": "add description"
-    },
-    "button": {
-      "title": "Button",
-      "description": "add button",
+    "img": {
       "type": "object",
+      "title": "Image",
+      "description": "The background image for the banner",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/image.json"
         }
       ]
     },
-    "textPositionLeft": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 3,
-      "title": "Text Position From The Left",
-      "description": "Enter a percentage value (without a '%' sign) to position text horizontally from the left"
+    "contentImg": {
+      "type": "object",
+      "title": "Content Image",
+      "description": "The image to display with the textual content for this banner",
+      "allOf": [
+        {
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/image.json"
+        }
+      ]
     },
-    "textPositionTop": {
-      "type": "string",
-      "minLength": 1,
-      "maxLength": 3,
-      "title": "Text position from middle",
-      "description": "Enter a percentage value (without a '%' sign) to position text vertically from the middle"
+    "header": {
+      "title": "Header",
+      "description": "Header text for the banner",
+      "validation": "Please enter less than 255 characters",
+      "allOf":[
+        {
+          "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+        }
+      ],
+      "properties":{
+        "values":{
+          "items":{
+            "properties":{
+              "value":{
+                "title": "Header",
+                "description": "Header text for the banner",
+                "type":"string",
+                "minLength":0,
+                "maxLength":255
+              }
+            }
+          }
+        }
+      }
     },
-    "headerFontColor": {
+    "subheader": {
       "type": "string",
-      "minLength": 3,
-      "maxLength": 7,
-      "title": "Header Font Color",
-      "description": "Enter a value for font color. i.e FFFFFF, blue"
+      "title": "Subheader",
+      "description": "Sub header text for the banner",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
     },
-    "headerFontBackground": {
+    "description": {
       "type": "string",
-      "minLength": 3,
-      "maxLength": 7,
-      "title": "Header Font Background Highlight",
-      "description": "Enter a value for font color. i.e FFFFFF, blue"
+      "title": "Description",
+      "description": "Description text for the banner",
+      "validation": "Please enter less than 2000 characters",
+      "minLength": 0,
+      "maxLength": 2000
     },
-    "subheaderFontColor": {
+    "button": {
+      "type": "object",
+      "title": "Link / Button",
+      "description": "The action link / button for the banner",
+      "allOf": [
+        {
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/link.json"
+        }
+      ],
+      "_interpolate": true
+    },
+    "alignment": {
       "type": "string",
-      "minLength": 3,
-      "maxLength": 7,
-      "title": "Subheader Font Color",
-      "description": "Enter a value for font color. i.e FFFFFF, blue"
+      "title": "Alignment",
+      "description": "Alignment of the text content in the banner (left/right). Default is left",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
     },
-    "descriptionFontColor": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 7,
-      "title": "Description Font Color",
-      "description": "Enter a value for font color. i.e FFFFFF, blue"
-    },
-    "overlayColor": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 11,
-      "title": "Overlay Color",
-      "description": "Enter a value for the overlay color i.e FFFFFF, blue"
-    },
-    "overlayOpacity":{
+    "percH": {
+      "title": "Horizontal alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
       "type": "number",
-      "title": "Overlay Opacity",
-      "description": "Enter a value between 0 and 1 (e.g. 0.5)",
-      "minimum": 0,
-      "maximum": 1.01
+      "minimum": -100,
+      "maximum": 100
+    },
+    "percV": {
+      "title": "Vertical alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Add classname for CSS styling",
+      "validation": "Please enter between 0 and 100 characters",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "hideBG": {
+      "type": "boolean",
+      "title": "Hide Background",
+      "description": "Enable to have no background behind the banner text. Default is false"
     },
     "stackMobileLayout": {
       "type": "boolean",
       "title": "Stack Mobile Layout",
-      "description": "Enable to allow banner text to stack underneath the image on small screens"
+      "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
     },
-    "hideOverlay": {
-      "type": "boolean",
-      "title": "Hide Overlay",
-      "description": "Hide Overlay behind banner info. Default is false"
-    },
-    "style": {
+    "analyticsEventLabel": {
       "type": "string",
-      "minLength": 0,
-      "maxLength": 100,
-      "title": "style",
-      "description": "Add prefix class for CSS styling. Leave empty for default styling"
+      "title": "Analytics Event Label",
+      "description": "Textual description of the campaign used to group analytics"
     }
   }
 }

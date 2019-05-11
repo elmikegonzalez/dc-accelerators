@@ -1,0 +1,47 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/metadata.json",
+  "title": "Meta Data",
+  "description": "Meta data to be associated to content",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "segment": {
+      "type": "array",
+      "title": "Segment",
+      "description": "Select the segment(s) this content relates to",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Segment 1",
+          "Segment 2",
+          "Segment 3",
+          "segment 4",
+          "segment 5",
+          "segment 6"
+        ]
+      }
+    },
+    "category": {
+      "type": "array",
+      "title": "Category",
+      "description": "Select the category(s) this content relates to",
+      "items": {
+        "type": "string",
+        "enum": [
+          "women",
+          "men",
+          "beauty",
+          "lighting",
+          "furniture",
+          "electricals",
+          "inspiration"
+        ]
+      }
+    }
+  }
+}

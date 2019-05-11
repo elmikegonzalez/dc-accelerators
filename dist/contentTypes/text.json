@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/text.json",
-  "title": "Text Acclerator",
-  "description": "Text Accelerator",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/text.json",
+  "title": "Text",
+  "description": "Re-usable content type which allows for rich text",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -15,9 +15,10 @@
   "properties": {
     "text": {
       "type": "string",
-      "format": "markdown",
       "title": "Text",
-      "description": "",
+      "description": "Enter textual content here",
+      "validation": "Please enter less than 6000 characters",
+      "format": "markdown",
       "minLength": 0,
       "maxLength": 6000
     }

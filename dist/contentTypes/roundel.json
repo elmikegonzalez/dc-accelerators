@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/roundel.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/roundel.json",
   "title": "Roundel",
-  "description": "Roundel Accelerator",
+  "description": "An additional layer which can be added to an image composite",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -26,6 +26,8 @@
       "maximum": 10
     },
     "roundelPosition": {
+      "title": "Roundel Position",
+      "description": "Roundel Position",
       "type": "string",
       "enum": [
         "Top Left",
@@ -33,9 +35,7 @@
         "Bottom Left",
         "Bottom Right",
         "Middle Center"
-      ],
-      "title": "Roundel Position",
-      "description": "Roundel Position"
+      ]
     }
   }
 }

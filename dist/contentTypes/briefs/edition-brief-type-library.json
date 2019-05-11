@@ -1,0 +1,61 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/briefs/edition-brief-type-library.json",
+    "title": "Core type schema",
+    "description": "core content type definitions to for brief specific content types",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "reference",
+        "designer",
+        "content-briefs",
+        "images",
+        "page-links"
+    ],
+    "type": "object",
+    "definitions": {
+        "edition-brief": {
+            "type": "object",
+            "title": "EDITION LEVEL BRIEF",
+            "properties": {
+                "reference": {
+                    "type": "string",
+                    "title": "Edition brief reference name",
+                    "format": "text"
+                },
+                "designer": {
+                    "type": "string",
+                    "title": "Designer",
+                    "format": "text"
+                },
+                "content-briefs": {
+                    "type": "array",
+                    "title": "CONTENT BRIEFS",
+                    "maxItems": 20,
+                    "items": {
+                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/briefs/content-brief-type-library.json#/definitions/content-brief"
+                    }
+                },
+                "images": {
+                    "type": "array",
+                    "title": "IMAGES",
+                    "maxItems": 5,
+                    "items": {
+                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/component-libraries/image-content-type-library.json#/definitions/descriptive-image"
+                    }
+                },
+                "page-links": {
+                    "type": "array",
+                    "title": "PAGE LINKS",
+                    "maxItems": 5,
+                    "items": {
+                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/component-libraries/links-content-type-library.json#/definitions/descriptive-link"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/component-libraries/image-content-type-library.json",
+  "title": "Core type schema for dealing with images",
+  "description": "schemas to wrap the image object",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "propertyOrder": [
+    "image-name",
+    "image-description",
+    "image-alt",
+    "image"
+  ],
+  "definitions": {
+      "descriptive-image": {
+          "type": "object",
+          "title": "IMAGE",
+          "properties": {
+              "image-name": {
+                  "type": "string",
+                  "title": "Image name",
+                  "format": "text"
+              },
+              "image-description": {
+                  "type": "string",
+                  "title": "Image description",
+                  "format": "text"
+              },
+              "image-alt": {
+                  "type": "string",
+                  "title": "Image ALT text",
+                  "format": "text"
+              },
+              "image": {
+                  "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+              }
+          }
+      }
+  }
+}

@@ -1,15 +1,15 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/card.json",
-  "title": "Card Accelerator",
-  "description": "Card Accelerator",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/card.json",
+  "title": "Card",
+  "description": "A single card of content",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
     }
   ],
   "propertyOrder": [
-    "cardImage",
+    "image",
     "cardName",
     "description",
     "linkValue",
@@ -17,49 +17,49 @@
   ],
   "type": "object",
   "properties": {
-    "cardImage": {
+    "image": {
       "type": "object",
+      "title": "Image",
+      "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-        },
-        {
-          "properties": {
-            "contentType": {
-              "title": "image",
-              "enum": [
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json"
-              ]
-            }
-          }
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/image.json"
         }
-      ],
-      "title": "Card Image",
-      "description": "Select or create an image content"
+      ]
     },
     "cardName": {
       "type": "string",
+      "title": "Name",
+      "description": "Name of the card",
+      "validation": "Please enter less than 50 characters",
       "minLength": 0,
-      "maxLength": 150,
-      "title": "Card name",
-      "description": ""
+      "maxLength": 150
     },
     "description": {
       "type": "string",
-      "minLength": 0,
-      "maxLength": 200,
       "title": "Description",
-      "description": ""
+      "description": "Card description",
+      "validation": "Please enter less than 50 characters",
+      "minLength": 0,
+      "maxLength": 200
     },
-    "link": {
-      "title": "Link",
-      "description": "add Link",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/link.json"
-        }
-      ]
+    "links": {
+      "type": "array",
+      "title": "Links",
+      "description": "Links for the card",
+      "items": {
+        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/link.json"
+      },
+      "minItems": 0,
+      "maxItems": 4
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Add classname for CSS styling",
+      "validation": "Please enter between 0 and 100 characters",
+      "minLength": 0,
+      "maxLength": 100
     }
   }
 }

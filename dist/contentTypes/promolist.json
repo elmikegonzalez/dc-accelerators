@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/blogList.json",
-  "title": "Blog List",
-  "description": "A list of blogs",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/promoList.json",
+  "title": "Promo List",
+  "description": "A list of promotions to display",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -10,10 +10,10 @@
   ],
   "type": "object",
   "properties": {
-    "blogs": {
+    "promos": {
       "type": "array",
-      "title": "Blogs",
-      "description": "Please select the blogs to display in this list",
+      "title": "Promotions",
+      "description": "A list of promotions to display",
       "items": {
         "allOf": [
           {
@@ -24,7 +24,7 @@
               "contentType": {
                 "title": "",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/blog.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/promo.json"
                 ]
               }
             }
@@ -32,7 +32,7 @@
         ]
       },
       "minItems": 1,
-      "maxItems": 100
+      "maxItems": 4
     }
   }
 }
