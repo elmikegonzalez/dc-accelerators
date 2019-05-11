@@ -3,13 +3,36 @@
     "link"
   ],
   "blog": [
-    "link",
-    "snippet"
+    "blogSnippet"
+  ],
+  "blogSnippet":[
+    "image",
+    "link"
   ],
   "image": [
     "roundel"
   ],
-  "promoBanner": [
-    "promobannersection"
+  "promo": [
+    "link"
+  ],
+  "campaign-brief":[
+    "edition-brief-type-library",
+    "content-brief-type-library",
+    "image-content-type-library",
+    "links-content-type-library"
+  ],
+  "page":[
+    "slider",
+    "video",
+    "text",
+    "externalBlock",
+    "splitBlock",
+    "image",
+    "cardList",
+    "banner",
+    "blogList",
+    "blog",
+    "ugc",
+    "promoList"
   ]
 }

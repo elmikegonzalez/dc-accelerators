@@ -1,6 +1,6 @@
 {
   "banner": [
-    "image"
+    "link"
   ],
   "blog": [
     "text",
@@ -9,25 +9,11 @@
     "slider",
     "banner",
     "card",
-    "cardList"
-  ],
-  "externalBlock": [],
-  "homepage": [
-    "slider",
-    "banner",
-    "promoBanner",
-    "video",
-    "text",
-    "externalBlock",
-    "splitBlock",
-    "card",
     "cardList",
-    "image",
-    "link",
-    "blog",
-    "bloglist"
+    "ugc"
   ],
-  "image": [],
+  "blogList":[],
+  "blogSnippet":[],
   "card": [
     "image"
   ],
@@ -35,28 +21,28 @@
     "image",
     "card"
   ],
-  "promoBanner": [],
+  "container:": [],
+  "externalBlock": [],
+  "image": [],
+  "link":[],
+  "metadata":[],
+  "page": [],
+  "product":[],
+  "promo": [],
+  "promoList": [],
+  "shoppableVideo": [],
   "slider": [
     "banner",
     "image",
     "video"
   ],
-  "text": [],
   "splitBlock": [
     "image",
     "video",
     "text"
   ],
+  "text": [],
+  "ugc":[],
   "video": [],
-  "link": [],
-  "snippet":[
-    "link"
-  ],
-  "content-settings": [
-    "image",
-    "link"
-  ],
-  "bloglist":[
-    "snippet"
-  ]
+  "campaign-brief":[]
 }
