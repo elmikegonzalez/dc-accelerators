@@ -1,47 +1,10 @@
 {
-  "banner": [
-    "link"
-  ],
-  "blog": [
-    "text",
-    "image",
-    "video",
-    "slider",
-    "banner",
-    "card",
-    "cardList",
-    "ugc"
-  ],
-  "blogList":[],
+  "container":[],
   "blogSnippet":[],
-  "card": [
-    "image"
-  ],
-  "cardList": [
-    "image",
-    "card"
-  ],
-  "container:": [],
-  "externalBlock": [],
-  "image": [],
-  "link":[],
+  "card":[],
   "metadata":[],
   "product":[],
   "promo": [],
-  "promoList": [],
   "shoppableVideo": [],
-  "slider": [
-    "banner",
-    "image",
-    "video"
-  ],
-  "splitBlock": [
-    "image",
-    "video",
-    "text"
-  ],
-  "text": [],
-  "ugc":[],
-  "video": [],
   "campaign-brief":[]
 }
