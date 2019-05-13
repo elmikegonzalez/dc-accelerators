@@ -62,7 +62,8 @@ var replaceVisualization = function () {
 
 gulp.task('addContentTypes', ['build'], function (cb) {
     for (var module in dependencies) {
-        var moduleName = module.toLowerCase();
+        // var moduleName = module.toLowerCase();
+       var moduleName = module;
         gulp.
           src([
           './node_modules/dc-accelerators-content-types/*' + moduleName + '.json',
