@@ -9,19 +9,7 @@
     "image",
     "link"
   ],
-  "image": [
-    "roundel"
-  ],
-  "promo": [
-    "link"
-  ],
-  "campaign-brief":[
-    "edition-brief-type-library",
-    "content-brief-type-library",
-    "image-content-type-library",
-    "links-content-type-library"
-  ],
-  "page":[
+  "container":[
     "slider",
     "video",
     "text",
@@ -34,5 +22,17 @@
     "blog",
     "ugc",
     "promoList"
+  ],
+  "image": [
+    "roundel"
+  ],
+  "promo": [
+    "link"
+  ],
+  "campaign-brief":[
+    "edition-brief-type-library",
+    "content-brief-type-library",
+    "image-content-type-library",
+    "links-content-type-library"
   ]
 }
