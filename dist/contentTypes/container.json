@@ -34,7 +34,8 @@
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/banner.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/blogList.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/ugc.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/promoList.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/promoList.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/blog.json"
                 ]
               }
             }
