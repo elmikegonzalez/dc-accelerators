@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/blogSnippet.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/blogSnippet.json",
   "title": "Blog Snippet",
   "description": "Key information for indexing and displaying a blog post",
   "allOf": [
@@ -26,7 +26,7 @@
       "description": "Image to show in the snippet",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/image.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/image.json"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "description": "The location of the blog post",
       "anyOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/willow/dist/contentTypes/link.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/link.json"
         }
       ],
       "_interpolate": true

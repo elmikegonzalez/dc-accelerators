@@ -34,5 +34,8 @@
     "content-brief-type-library",
     "image-content-type-library",
     "links-content-type-library"
+  ],
+  "promobanner":[
+      "promobannersection"
   ]
 }

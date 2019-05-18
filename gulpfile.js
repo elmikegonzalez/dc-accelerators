@@ -98,7 +98,7 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 gulp.task("upload-content-types", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/demos/willow/dist/contentTypes', //  Required
+        Bucket: 'dev-solutions/maic/demos/ulta/dist/contentTypes', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -110,7 +110,7 @@ gulp.task("upload-content-types", function() {
 gulp.task("upload-icons", function() {
   gulp.src("./dist/icons/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/demos/willow/dist/icons', //  Required
+        Bucket: 'dev-solutions/maic/demos/ulta/dist/icons', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
