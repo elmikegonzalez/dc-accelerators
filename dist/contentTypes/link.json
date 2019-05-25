@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/link.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/link.json",
   "title": "Link",
   "description": "URL action link",
   "allOf": [

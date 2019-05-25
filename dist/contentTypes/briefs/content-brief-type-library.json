@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/briefs/content-brief-type-library.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/briefs/content-brief-type-library.json",
   "title": "Core type schema",
   "description": "core content type definitions to for brief specific content types",
   "allOf": [
@@ -64,7 +64,7 @@
                     "title": "IMAGES",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/component-libraries/image-content-type-library.json#/definitions/descriptive-image"
+                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
                 },
                 "links": {
@@ -72,7 +72,7 @@
                     "title": "PAGE LINKS",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/component-libraries/links-content-type-library.json#/definitions/descriptive-link"
+                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/component-libraries/links-content-type-library.json#/definitions/descriptive-link"
                     }
                 }
             }

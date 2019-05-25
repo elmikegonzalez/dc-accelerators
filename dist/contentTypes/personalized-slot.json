@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/personalized-banner-slot.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/personalized-slot.json",
   "title": "Personalized Slot",
-  "description": "A Slot that can accept multiple content-types (banner, slider or video) for different segments",
+  "description": "A Slot that can accept multiple content-types for different segments",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -43,7 +43,16 @@
                     "title": "contentType",
                     "enum": [
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/banner.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/blog.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/blogList.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/card.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/cardList.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/promobanner.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/shoppableVideo.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/promobanner.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/splitBlock.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/slider.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/text.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/video.json"
                     ]
                   }

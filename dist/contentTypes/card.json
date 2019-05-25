@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/card.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/card.json",
   "title": "Card",
   "description": "A single card of content",
   "allOf": [
@@ -23,7 +23,7 @@
       "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/image.json"
+          "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/image.json"
         }
       ]
     },
@@ -48,7 +48,7 @@
       "title": "Links",
       "description": "Links for the card",
       "items": {
-        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/ulta/dist/contentTypes/link.json"
+        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/link.json"
       },
       "minItems": 0,
       "maxItems": 4
