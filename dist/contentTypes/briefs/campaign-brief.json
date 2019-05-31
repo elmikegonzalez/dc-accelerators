@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/briefs/campaign-brief.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/briefs/campaign-brief.json",
   "title": "Campaign Brief",
   "description": "campaign brief",
   "allOf": [
@@ -25,7 +25,7 @@
             "description": "the brief for specific editions",
             "maxItems": 5,
             "items": {
-                "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/briefs/edition-brief-type-library.json#/definitions/edition-brief"
+                "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/briefs/edition-brief-type-library.json#/definitions/edition-brief"
             }
       }
     }

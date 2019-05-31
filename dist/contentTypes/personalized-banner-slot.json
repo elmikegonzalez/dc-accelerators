@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/personalized-banner-slot.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/personalized-banner-slot.json",
   "title": "Personalized Slot",
-  "description": "A Slot that can accept multiple content-types (banner, slider or video) for different segments",
+  "description": "Personalized Hero Banner Slot for different segments",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -25,6 +25,7 @@
             "type": "string",
             "title": "Segment",
             "enum": [
+              "RH-member",
               "bargain-hunter",
               "fashionista",
               "home-trendsetter",
@@ -42,7 +43,7 @@
                   "contentType": {
                     "title": "contentType",
                     "enum": [
-                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/banner.json"
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json"
                     ]
                   }
                 }

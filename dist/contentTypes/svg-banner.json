@@ -1,0 +1,81 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/svg-banner.json",
+
+  "title": "Title",
+  "description": "Description",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "backgroundimage",
+    "model",
+    "main",
+    "sub",
+    "text1",
+    "text2",
+    "colort"
+  ],
+  "type": "object",
+  "properties": {
+    "backgroundimage":{
+      "title": "Background Image",
+      "description": "background image",
+      "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+      ]
+    },
+    "model":{
+      "title": "Product Image",
+      "description": "Product Image",
+      "hint": "image must be clipped with transparent background to be effective",
+      "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+      ]
+    },
+    "main": {
+      "title": "Heading",
+      "description": "Heading of this product writeup",
+      "type": "string",
+      "validation" : "must be no longer than 40 character",
+      "minLength": 0,
+      "maxLength": 40
+    },
+    "sub": {
+      "title": "Sub heading",
+      "description": "Sub Heading copy",
+      "hint" : "Second line in the banner",
+      "validation" : "must be no longer than 40 character",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 40
+    },
+    "text1": {
+      "title": "Text 1",
+      "description": "1st banner message",
+      "type": "string",
+      "hint" : "The first line of banner message text",
+      "validation" : "must be no longer than 120 character",
+      "minLength": 0,
+      "maxLength": 120
+    },
+    "text2": {
+      "title": "Text 2",
+      "description": "2nd banner message",
+      "type": "string",
+      "hint" : "The second line of banner message text",
+      "validation" : "must be no longer than 120 character",
+      "minLength": 0,
+      "maxLength": 120
+    },
+    "colort": {
+      "title": "Color Text",
+      "description": "Text color for CTA",
+      "format": "color",
+      "type": "string"
+    }
+  }
+}
