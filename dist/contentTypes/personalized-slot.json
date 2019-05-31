@@ -25,6 +25,7 @@
             "type": "string",
             "title": "Segment",
             "enum": [
+              "RH-member",
               "bargain-hunter",
               "fashionista",
               "home-trendsetter",
@@ -47,9 +48,9 @@
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/blogList.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/card.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/cardList.json",
+                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/image.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/promobanner.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/shoppableVideo.json",
-                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/promobanner.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/splitBlock.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/slider.json",
                       "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/rh/dist/contentTypes/text.json",
