@@ -1,0 +1,52 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/sfcc-dc-slot.json",
+  "title": "sfcc-dc-slot",
+  "description": "SFCC DC slot",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "_environment": {
+      "type": "object",
+      "properties": {
+        "sfcc_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_slot"
+        },
+        "sfcc_category_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_category_slot"
+        }
+      }
+    },
+    "content": {
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "Page Content",
+              "enum": [
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/slider.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/video.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/text.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/splitblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/image.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/cardlist.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/externalblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/homepage.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/promobanner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/blog.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

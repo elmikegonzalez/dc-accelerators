@@ -28,7 +28,8 @@
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/image.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/video.json",
                   "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/text.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json",
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/cardList.json"
                 ]
               }
             }
