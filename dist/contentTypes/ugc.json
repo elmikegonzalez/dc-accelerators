@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/ugc.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/ugc.json",
   "title": "UGC",
   "description": "A reusable content type UGC content",
   "allOf": [

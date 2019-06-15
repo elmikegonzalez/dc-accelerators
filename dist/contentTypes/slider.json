@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/slider.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/slider.json",
   "title": "Slider",
   "description": "Contains Images, Videos & Banners to produce a slider / carousel",
   "allOf": [
@@ -27,9 +27,9 @@
               "contentType": {
                 "title": "slides",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/video.json"
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json"
                 ]
               }
             }

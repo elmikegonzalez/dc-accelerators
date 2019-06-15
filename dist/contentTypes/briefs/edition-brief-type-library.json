@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/briefs/edition-brief-type-library.json",
+    "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/briefs/edition-brief-type-library.json",
     "title": "Core type schema",
     "description": "core content type definitions to for brief specific content types",
     "allOf": [
@@ -36,7 +36,7 @@
                     "title": "CONTENT BRIEFS",
                     "maxItems": 20,
                     "items": {
-                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/briefs/content-brief-type-library.json#/definitions/content-brief"
+                        "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/briefs/content-brief-type-library.json#/definitions/content-brief"
                     }
                 },
                 "images": {
@@ -44,7 +44,7 @@
                     "title": "IMAGES",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/component-libraries/image-content-type-library.json#/definitions/descriptive-image"
+                        "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/component-libraries/image-content-type-library.json#/definitions/descriptive-image"
                     }
                 },
                 "page-links": {
@@ -52,7 +52,7 @@
                     "title": "PAGE LINKS",
                     "maxItems": 5,
                     "items": {
-                        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/component-libraries/links-content-type-library.json#/definitions/descriptive-link"
+                        "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/component-libraries/links-content-type-library.json#/definitions/descriptive-link"
                     }
                 }
             }

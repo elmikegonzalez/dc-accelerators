@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/splitBlock.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/splitBlock.json",
 
   "title": "Split Block",
   "description": "A reusable content type which allows 2 content types to be used together to create a split block",
@@ -25,11 +25,10 @@
               "contentType": {
                 "title": "",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/image.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/video.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/text.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json",
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/cardList.json"
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/text.json",
+                  "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json"
                 ]
               }
             }

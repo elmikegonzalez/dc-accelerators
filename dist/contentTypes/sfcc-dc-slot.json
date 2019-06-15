@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/sfcc-dc-slot.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/sfcc-dc-slot.json",
   "title": "sfcc-dc-slot",
   "description": "SFCC DC slot",
   "allOf": [
@@ -31,17 +31,17 @@
             "contentType": {
               "title": "Page Content",
               "enum": [
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/slider.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/video.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/text.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/splitblock.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/image.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/cardlist.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/externalblock.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/homepage.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/promobanner.json",
-                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/blog.json"
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/slider.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/text.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/splitblock.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/cardlist.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/externalblock.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/homepage.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/promobanner.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blog.json"
               ]
             }
           }

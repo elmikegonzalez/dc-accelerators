@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/personalized-banner-slot.json",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/personalized-banner-slot.json",
   "title": "Personalized Slot",
   "description": "Personalized Hero Banner Slot for different segments",
   "allOf": [
@@ -43,7 +43,7 @@
                   "contentType": {
                     "title": "contentType",
                     "enum": [
-                      "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/demos/coach/dist/contentTypes/banner.json"
+                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json"
                     ]
                   }
                 }

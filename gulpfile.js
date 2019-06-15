@@ -23,7 +23,7 @@ var addSrc = require('gulp-add-src');
 
 var connect = require('gulp-connect');
 var watch = require('gulp-watch');
-var config = JSON.parse(fs.readFileSync('private/awsaccess.json'));
+var config = JSON.parse(fs.readFileSync('private/presales.json'));
 var s3 = require('gulp-s3-upload')(config);
 var name;
 
@@ -98,7 +98,7 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 gulp.task("upload-content-types", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/demos/coach/dist/contentTypes', //  Required
+        Bucket: 'presalesadisws/demo/maic/baja/dist/contentTypes', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -110,7 +110,7 @@ gulp.task("upload-content-types", function() {
 gulp.task("upload-icons", function() {
   gulp.src("./dist/icons/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/demos/coach/dist/icons', //  Required
+        Bucket: 'presalesadisws/demo/maic/baja/dist/icons', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
