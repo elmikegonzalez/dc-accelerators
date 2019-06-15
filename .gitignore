@@ -1,4 +1,4 @@
 node_modules/*
 .idea
 private/awsaccess.json
-
+private/presales.json
