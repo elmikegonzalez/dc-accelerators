@@ -1,0 +1,33 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/sfmc-dc-slot.json",
+  "title": "SFMC DC Slot",
+  "description": "SFMC DC slot",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "contentType",
+              "enum": [
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/emailbannersvg.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

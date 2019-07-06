@@ -11,19 +11,25 @@
   "propertyOrder": [
     "img",
     "header",
+    "headerFontColor",
+    "headerFontBackground",
     "subheader",
-    "analyticsEventLabel",
+    "subheaderFontColor",
     "description",
+    "descriptionFontColor",
     "button",
     "alignment",
     "percH",
     "percV",
-    "style",
+    "overlayColor",
+    "overlayOpacity",
     "stackMobileLayout",
     "hideBG",
-    "contentImg"
+    "hideOverlay",
+    "contentImg",
+    "style",
+    "analyticsEventLabel"
   ],
-  "required": ["analyticsEventLabel"],
   "type": "object",
   "properties": {
     "img": {
@@ -144,6 +150,53 @@
       "type": "string",
       "title": "Analytics Event Label",
       "description": "Textual description of the campaign used to group analytics"
+    },
+    "hideOverlay": {
+      "type": "boolean",
+      "title": "Hide Overlay",
+      "description": "Hide Overlay behind banner info. Default is false"
+    },
+    "headerFontColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 7,
+      "title": "Header Font Color",
+      "description": "Enter a value for font color. i.e FFFFFF, blue"
+    },
+    "headerFontBackground": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 7,
+      "title": "Header Font Background Highlight",
+      "description": "Enter a value for font color. i.e FFFFFF, blue"
+    },
+    "subheaderFontColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 7,
+      "title": "Subheader Font Color",
+      "description": "Enter a value for font color. i.e FFFFFF, blue"
+    },
+    "descriptionFontColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 7,
+      "title": "Description Font Color",
+      "description": "Enter a value for font color. i.e FFFFFF, blue"
+    },
+    "overlayColor": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 11,
+      "title": "Overlay Color",
+      "description": "Enter a value for the overlay color i.e FFFFFF, blue"
+    },
+    "overlayOpacity":{
+      "type": "number",
+      "title": "Overlay Opacity",
+      "description": "Enter a value between 0 and 1 (e.g. 0.5)",
+      "minimum": 0,
+      "maximum": 1.01
     }
   }
 }

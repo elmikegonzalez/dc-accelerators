@@ -1,0 +1,105 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product.json",
+  "title": "product",
+  "description": "Base product schema",
+  "propertyOrder": ["product_code","product_title","regular_price","member_price","product_description","product_details","product_dimensions","product_type", "product_options"],
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "product_title": {
+      "title": "Product title",
+      "description": "",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 300
+    },
+    "product_code": {
+      "title": "Product code",
+      "description": "",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 40
+    },
+    "regular_price": {
+      "title": "Regular price",
+      "description": "",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 200
+    },
+    "member_price": {
+      "title": "Member price",
+      "description": "",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 200
+    },
+    "product_description": {
+      "title": "Product description",
+      "description": "",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2000
+    },
+    "product_details":{
+      "title": "Product details",
+      "description": "",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 15,
+      "items": {
+        "type": "string"
+      }
+    },
+    "product_dimensions":{
+      "title": "Product dimensions",
+      "description": "",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 100,
+      "items": {
+        "type": "string"
+      }
+    },
+    "product_type":{
+      "title": "product type",
+      "description": "the product type with variants",
+      "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+        {
+          "properties": {
+            "contentType": {
+              "enum": [
+                "http://rh.com/products/product_type/table",
+                "http://rh.com/products/product_type/chair"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "product_options": {
+      "title": "Available Product Options",
+      "description": "Available customization options",
+      "type": "object",
+      "properties": {
+        "finishes": {
+          "$ref": "http://rh.com/product/partials/finishes#/definitions/finishes"
+        },
+        "Stocked_fabrics": {
+          "$ref": "http://rh.com/product/partials/fabrics#/definitions/fabrics"
+        },
+        "depth": {
+          "$ref": "http://rh.com/product/partials/depths#/definitions/depths"
+        }
+      },
+      "propertyOrder": []
+    }
+  }
+}

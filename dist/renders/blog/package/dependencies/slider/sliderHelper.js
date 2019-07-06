@@ -79,7 +79,10 @@ window.loryHelpers = {
     $sliders.forEach(function($slider, i) {
       var infinite = $slider.getAttribute('data-infinite') === 'true';
       var navDots = $slider.getAttribute('data-navigation') === 'true';
-      var sliderSettings = {};
+      var autoPlay = $slider.getAttribute('data-autoplay') === 'true';
+      var sliderSettings = {
+        enableMouseEvents: true
+      };
       if (infinite) {
         sliderSettings.infinite = 1;
       }

@@ -56,7 +56,8 @@
                       "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/slider.json",
                       "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/svg-banner.json",
                       "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/text.json",
-                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json"
+                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json",
+                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/emailbannersvg.json"
                     ]
                   }
                 }

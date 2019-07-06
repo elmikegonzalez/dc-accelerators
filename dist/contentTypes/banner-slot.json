@@ -1,0 +1,34 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner-slot.json",
+  "title": "Banner Slot",
+  "description": "A Slot that can accept a single banner",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "contentType",
+              "enum": [
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/banner.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/slider.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/video.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

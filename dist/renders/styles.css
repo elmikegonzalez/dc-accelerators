@@ -397,6 +397,138 @@
   }
 }
 
+.amp-dc-homepage {
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.amp-dc-homepage .amp-dc-block-wrap {
+  margin-top: 50px;
+}
+
+.amp-dc-homepage .amp-dc-text {
+  font-style: normal;
+  -webkit-font-variant-ligatures: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 19px;
+  line-height: 26px;
+  font-family: trade-gothic-next, sans-serif;
+}
+
+.amp-dc-homepage .amp-dc-splitBlock {
+  overflow: hidden;
+}
+
+.amp-dc-homepage .amp-dc-splitBlock {
+  overflow: hidden;
+}
+
+.amp-dc-homepage .amp-dc-promo-banner-wrap {
+  margin: 20px 0;
+}
+
+.amp-dc-homepage .amp-dc-promo-banner {
+  margin: -70px -5px 0 -5px;
+}
+
+.header-wrap ul {
+  list-style: none;
+}
+
+.header-wrap .header-content {
+  margin: 10px 50px;
+}
+
+.header-wrap .logo {
+  float: left;
+  width: 220px;
+  height: 100%;
+  display: inline-block;
+}
+
+.header-wrap .logo-image {
+  height: 100%;
+}
+
+.header-wrap .top-menu {
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.header-wrap .top-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 23px;
+}
+
+.header-wrap .top-menu > li:last-child {
+  margin-right: 0;
+}
+
+.header-wrap .top-menu > li > a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header-wrap .top-menu > li > a:hover {
+  text-decoration: underline;
+}
+
+.header-wrap .customer-menu {
+  float: right;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrap .customer-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 24px;
+}
+
+.header-wrap .customer-menu > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 36px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.header-wrap .header-promotion {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 7px;
+  text-align: center;
+  font-size: 12.8px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 979px) {
+  .header-wrap .logo {
+    width: auto;
+  }
+  .header-wrap .top-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header-wrap .customer-menu .first-nav, .header-wrap .customer-menu .second-nav {
+    display: none;
+  }
+}
+
 .amp-dc-image {
   margin: 0;
   padding: 0;
@@ -539,138 +671,6 @@
   }
 }
 
-.amp-dc-homepage {
-  overflow: hidden;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.amp-dc-homepage .amp-dc-block-wrap {
-  margin-top: 50px;
-}
-
-.amp-dc-homepage .amp-dc-text {
-  font-style: normal;
-  -webkit-font-variant-ligatures: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 19px;
-  line-height: 26px;
-  font-family: trade-gothic-next, sans-serif;
-}
-
-.amp-dc-homepage .amp-dc-splitBlock {
-  overflow: hidden;
-}
-
-.amp-dc-homepage .amp-dc-splitBlock {
-  overflow: hidden;
-}
-
-.amp-dc-homepage .amp-dc-promo-banner-wrap {
-  margin: 20px 0;
-}
-
-.amp-dc-homepage .amp-dc-promo-banner {
-  margin: -70px -5px 0 -5px;
-}
-
-.header-wrap ul {
-  list-style: none;
-}
-
-.header-wrap .header-content {
-  margin: 10px 50px;
-}
-
-.header-wrap .logo {
-  float: left;
-  width: 220px;
-  height: 100%;
-  display: inline-block;
-}
-
-.header-wrap .logo-image {
-  height: 100%;
-}
-
-.header-wrap .top-menu {
-  overflow: hidden;
-  text-align: center;
-  margin: 10px 0;
-}
-
-.header-wrap .top-menu > li {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 23px;
-}
-
-.header-wrap .top-menu > li:last-child {
-  margin-right: 0;
-}
-
-.header-wrap .top-menu > li > a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.header-wrap .top-menu > li > a:hover {
-  text-decoration: underline;
-}
-
-.header-wrap .customer-menu {
-  float: right;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.header-wrap .customer-menu > li {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 24px;
-}
-
-.header-wrap .customer-menu > li > a {
-  text-decoration: none;
-  color: #000;
-  font-size: 36px;
-  height: 40px;
-  line-height: 40px;
-}
-
-.header-wrap .header-promotion {
-  background-color: #000;
-  color: #fff;
-  padding: 5px 7px;
-  text-align: center;
-  font-size: 12.8px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 979px) {
-  .header-wrap .logo {
-    width: auto;
-  }
-  .header-wrap .top-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .header-wrap .customer-menu .first-nav, .header-wrap .customer-menu .second-nav {
-    display: none;
-  }
-}
-
 .amp-dc-slider {
   position: relative;
   overflow: hidden;
@@ -719,9 +719,9 @@
 
 .amp-dc-slider .amp-dc-slider-next svg, .amp-dc-slider .amp-dc-slider-prev svg {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  fill: #fff;
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -757,19 +757,43 @@
 }
 
 .amp-dc-slider .amp-dc-dots > li {
-  border: 1px solid #666;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 1px 1px 1px #888;
-  box-shadow: inset 1px 1px 1px #888;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
   display: inline-block;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .amp-dc-slider .amp-dc-dots > li.active {
-  background-color: #41ABE5;
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .amp-dc-slider .amp-dc-slider-next, .amp-dc-slider .amp-dc-slider-prev {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .amp-dc-slider .amp-dc-dots > li {
+    border: 1px solid #cccccc;
+    border-radius: 100%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .amp-dc-slider .amp-dc-dots > li.active {
+    background-color: #000;
+  }
 }
 
 .amp-dc-splitBlock {
@@ -1279,359 +1303,6 @@
   }
 }
 
-.kiehls-amp-dc-banner {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-hide {
-  display: none;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info {
-  background: #fff;
-  padding: 0px 0px 15px 0px;
-  letter-spacing: 5px;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-pic {
-  max-width: 100%;
-  display: block;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-pic img {
-  width: 100%;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-img {
-  width: 100%;
-  display: block;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-  color: #fff;
-  width: 33.3%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  line-height: 1.6;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-  left: 65px;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-  right: 65px;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -1em;
-  /* Adjusts for spacing */
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info {
-  display: inline-block;
-  top: 5vw;
-  left: 5vw;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-header {
-  text-transform: uppercase;
-  font-family: trade-gothic-next, sans-serif;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 3.5vw;
-  line-height: 1em;
-  margin-bottom: .5rem;
-  letter-spacing: normal;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-subheader {
-  font-family: trade-gothic-next, sans-serif;
-  font-weight: 700;
-  font-style: bold;
-  letter-spacing: 2px;
-  font-size: 1.75vw;
-  line-height: 1.3em;
-  margin-bottom: 1em;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-description {
-  text-transform: uppercase;
-  font-family: trade-gothic-next, sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.kiehls-amp-dc-banner .kiehls-amp-dc-banner-button {
-  text-transform: uppercase;
-  font-family: trade-gothic-next, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  display: inline-block;
-  background-color: transparent;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  letter-spacing: .2px;
-  color: white;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-    width: 100%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
-    opacity: 1 !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-    left: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-    right: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 15px 10px 15px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
-    display: block;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    color: black !important;
-    font-size: 24px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
-    color: black !important;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-    width: 100%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
-    opacity: 1 !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-    left: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-    right: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 15px 10px 15px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
-    display: block;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    color: black !important;
-    font-size: 28px;
-    text-align: center;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
-    color: black !important;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-    width: 40%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
-    opacity: 1 !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-    left: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-    right: 35px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 15px 10px 15px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
-    display: block;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-size: 44px;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
-    color: black !important;
-  }
-}
-
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-    width: 50%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
-    opacity: 1 !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-    left: 20px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-    right: 20px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
-    width: 100%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='left'] {
-    left: 0;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='right'] {
-    right: 0;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto;
-    display: block;
-    max-width: 100%;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
-    display: block;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white !important;
-  }
-}
-
-@media screen and (max-width: 385px) {
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
-    width: 100%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
-    opacity: 1 !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
-    left: 20px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
-    right: 20px;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
-    width: 100%;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='left'] {
-    left: 0;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='right'] {
-    right: 0;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom {
-    position: relative;
-    top: 0 !important;
-    left: 0 !important;
-    right: auto;
-    display: block;
-    max-width: 100%;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
-    display: block;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: black !important;
-  }
-  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: trade-gothic-next, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white !important;
-    font-size: 12px;
-    white-space: nowrap;
-    word-break: break-all;
-  }
-}
-
 .rh-amp-dc-banner {
   position: relative;
   overflow: hidden;
@@ -1976,6 +1647,359 @@
   .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
     text-transform: uppercase;
     font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white !important;
+    font-size: 12px;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+}
+
+.kiehls-amp-dc-banner {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-hide {
+  display: none;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info {
+  background: #fff;
+  padding: 0px 0px 15px 0px;
+  letter-spacing: 5px;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-pic {
+  max-width: 100%;
+  display: block;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-pic img {
+  width: 100%;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-img {
+  width: 100%;
+  display: block;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+  color: #fff;
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  line-height: 1.6;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+  left: 65px;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+  right: 65px;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -1em;
+  /* Adjusts for spacing */
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-info {
+  display: inline-block;
+  top: 5vw;
+  left: 5vw;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-header {
+  text-transform: uppercase;
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 3.5vw;
+  line-height: 1em;
+  margin-bottom: .5rem;
+  letter-spacing: normal;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-subheader {
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 2px;
+  font-size: 1.75vw;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-description {
+  text-transform: uppercase;
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.kiehls-amp-dc-banner .kiehls-amp-dc-banner-button {
+  text-transform: uppercase;
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: .2px;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+    width: 100%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+    left: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+    right: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px 10px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
+    display: block;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    color: black !important;
+    font-size: 24px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+    width: 100%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+    left: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+    right: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px 10px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
+    display: block;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    color: black !important;
+    font-size: 28px;
+    text-align: center;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+    width: 40%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+    left: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+    right: 35px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px 10px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
+    display: block;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+    width: 50%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+    left: 20px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+    right: 20px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
+    width: 100%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='left'] {
+    left: 0;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='right'] {
+    right: 0;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
+    display: block;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap {
+    width: 100%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='left'] {
+    left: 20px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap[data-align='right'] {
+    right: 20px;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom {
+    width: 100%;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='left'] {
+    left: 0;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom[data-align='right'] {
+    right: 0;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-info {
+    display: block;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-header {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: black !important;
+  }
+  .kiehls-amp-dc-banner .kiehls-amp-dc-banner-info-wrap.kiehls-amp-dc-info-bottom.kiehls-amp-dc-info-bottom .kiehls-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: trade-gothic-next, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white !important;

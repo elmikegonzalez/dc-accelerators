@@ -10,6 +10,7 @@
   ],
   "propertyOrder": [
     "slides",
+    "autoPlay",
     "loop",
     "navigationDots"
   ],
@@ -40,6 +41,11 @@
       "description": "Select from banners, images and videos to use in this slider",
       "minItems": 1,
       "maxItems": 8
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "title": "Autoplay",
+      "description": "Autoplay slider?"
     },
     "loop": {
       "type": "boolean",

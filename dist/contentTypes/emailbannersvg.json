@@ -1,0 +1,145 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/emailbannersvg.json",
+
+  "title": "SVG Banner",
+  "description": "Used to drive the email campaign image via SVG",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "backgroundimage",
+    "heading1",
+    "heading1color",
+    "heading2",
+    "heading2color",
+    "heading3",
+    "heading3color",
+    "CTA",
+    "ctacolor",
+    "ctabgcolor",
+    "badgecopy1",
+    "badgecopy1color",
+    "badgecopy2",
+    "badgecopy2color",
+    "badgecopy3",
+    "badgecopy3color",
+    "badgebgcolor"
+  ],
+  "type": "object",
+  "properties": {
+    "backgroundimage":{
+      "title": "Background Image",
+      "description": "background image",
+      "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+      ]
+    },
+    "heading1": {
+      "title": "Heading 1",
+      "description": "Heading 1 copy",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "heading1color": {
+      "title": "Heading 1 color",
+      "description": "Text color for Heading 1",
+      "format": "color",
+      "type": "string"
+    },
+    "heading2": {
+      "title": "Heading 2",
+      "description": "Heading 2 copy",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "heading2color": {
+      "title": "Heading 2 color",
+      "description": "Text color for Heading 1",
+      "format": "color",
+      "type": "string"
+    },
+    "heading3": {
+      "title": "Heading 3",
+      "description": "Heading 3 copy",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "heading3color": {
+      "title": "Heading 3 color",
+      "description": "Text color for Heading 3",
+      "format": "color",
+      "type": "string"
+    },
+    "CTA": {
+      "title": "Call to action",
+      "description": "CTA copy",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "ctacolor": {
+      "title": "CTA color",
+      "description": "Text color for CTA",
+      "format": "color",
+      "type": "string"
+    },
+    "ctabgcolor": {
+      "title": "CTA background",
+      "description": "background color for CTA",
+      "format": "color",
+      "type": "string"
+    },
+    "badgecopy1": {
+      "title": "Badge copy 1",
+      "description": "Badge line 1",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "badgecopy1color": {
+      "title": "badge copy 1 color",
+      "description": "Text color for badge line 1",
+      "format": "color",
+      "type": "string"
+    },
+    "badgecopy2": {
+      "title": "Badge copy 2",
+      "description": "Badge line 2",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "badgecopy2color": {
+      "title": "badge copy 2 color",
+      "description": "Text color for badge 2",
+      "format": "color",
+      "type": "string"
+    },
+    "badgecopy3": {
+      "title": "Badge copy 3",
+      "description": "Badge line 3",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "badgecopy3color": {
+      "title": "badge copy 3 color",
+      "description": "Text color for badge line 3",
+      "format": "color",
+      "type": "string"
+    },
+    "badgebgcolor": {
+      "title": "Badge background",
+      "description": "background color for badge",
+      "format": "color",
+      "type": "string"
+    }
+  }
+}

@@ -41,7 +41,9 @@
                 "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/externalblock.json",
                 "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/homepage.json",
                 "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/promobanner.json",
-                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blog.json"
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blog.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/cardList.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/emailbannersvg.json"
               ]
             }
           }
