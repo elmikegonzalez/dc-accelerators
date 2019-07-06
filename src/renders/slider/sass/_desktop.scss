@@ -39,10 +39,10 @@
 
     svg {
       cursor: pointer;
-      width: 40px;
-      height: 40px;
-      fill: #fff;
-      background: rgba(0, 0, 0, 0.5);
+      width: 30px;
+      height: 30px;
+      fill: #ffffff;
+      background: rgba(0, 0, 0, .5);
     }
 
     &.ctrl-disabled {
@@ -72,16 +72,16 @@
     -webkit-tap-highlight-color: transparent;
   }
   .amp-dc-dots > li {
-    border: 1px solid #666;
-    border-radius: 50%;
-    box-shadow: inset 1px 1px 1px #888;
+    border: 1px solid #cccccc;
+    border-radius: 100%;
+    //box-shadow: inset 1px 1px 1px #888;
     display: inline-block;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin: 0 5px;
     cursor: pointer;
     &.active {
-      background-color: #41ABE5;
+      background-color: #000;
     }
   }
 }
