@@ -1,0 +1,116 @@
+.tatcha-amp-dc-banner {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tatcha-amp-dc-banner * {
+  margin: 0;
+  padding: 0;
+}
+
+.tatcha-amp-dc-banner .tatcha-amp-dc-hide {
+  display: none;
+}
+
+  .tatcha-amp-dc-banner-info {
+    font-size: 22px;
+    text-align: left;
+    // background: #fff;
+    color: #000;
+    //padding: 15px;
+    min-width: 200px;
+  }
+
+  .tatcha-amp-dc-banner-pic {
+    max-width: 100%;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+
+  .tatcha-amp-dc-banner-img {
+    width: 100%;
+    display: block;
+  }
+
+  .tatcha-amp-dc-banner-info-wrap {
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    white-space: normal;
+
+    &[data-align='left'] {
+      left: 65px;
+    }
+
+    &[data-align='right'] {
+      right: 65px;
+    }
+    &[data-align='center']{
+      center:65px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -1em; /* Adjusts for spacing */
+    }
+  }
+
+  .tatcha-amp-dc-banner-info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .tatcha-amp-dc-banner-header {
+    //text-align: center;
+    font-family: Metro Nova W01 Regular;
+    color: #000000;
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 300;
+}
+
+  .tatcha-amp-dc-banner-subheader {
+    //text-align: center;
+  font-family: Metro Nova W01 Regular;
+  color: #000000;
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: 300;
+  //margin-top: 15px;
+  text-transform: uppercase;
+}
+
+  .tatcha-amp-dc-banner-description{
+    //text-align: center;
+    font-family: Metro Nova W01 Regular;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    //text-transform: uppercase;
+  }
+
+  .tatcha-amp-dc-banner-button {
+    font-family: Metro Nova W01 Thin,sans-serif;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-size: 20px;
+    padding: 14px 25px;
+    min-width: 145px;
+    font-weight: 400;
+    box-sizing: border-box;
+    transition: background-color .3s ease-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: center;
+  }

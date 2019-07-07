@@ -1,0 +1,123 @@
+.thc-amp-dc-banner {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+
+  .thc-amp-dc-hide {
+    display: none;
+  }
+
+  .thc-amp-dc-banner-info {
+    font-size: 22px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    min-width: 200px;
+  }
+
+  .thc-amp-dc-banner-pic {
+    max-width: 100%;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+
+  .thc-amp-dc-banner-img {
+    width: 100%;
+    display: block;
+  }
+
+  .thc-amp-dc-banner-info-wrap {
+    color: #fff;
+    width: 33.3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    white-space: normal;
+
+    &[data-align='left'] {
+      left: 65px;
+    }
+
+    &[data-align='right'] {
+      right: 65px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -1em; /* Adjusts for spacing */
+    }
+  }
+
+  .thc-amp-dc-banner-info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .thc-amp-dc-banner-header {
+    //text-transform: uppercase;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    max-width: max-content;
+    padding: 9px;
+    margin-top : -30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .thc-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 87px;
+    //font-size: 37px;
+  }
+  .thc-amp-dc-banner-description{
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+  }
+
+  .thc-amp-dc-banner-button {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    min-width: 40%;
+    padding: 17px 15px;
+    background: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing:2px;
+    //&.black {
+    //  background: #000;
+    //  color: #fff;
+    //}
+    //&.white {
+    //  background: #fff;
+    //  color: #000;
+    //}
+    color:white;
+  }
+
+}
+
+
+
+
+
+
+
+

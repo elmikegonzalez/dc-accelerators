@@ -1,0 +1,136 @@
+.sb-amp-dc-banner {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+
+  .sb-amp-dc-hide {
+    display: none;
+  }
+
+  .sb-amp-dc-banner-info {
+    font-size: 22px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    min-width: 250px;
+    letter-spacing: 5px
+  }
+
+  .sb-amp-dc-banner-pic {
+    max-width: 100%;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+
+  .sb-amp-dc-banner-img {
+    width: 100%;
+    display: block;
+  }
+
+  .sb-amp-dc-banner-info-wrap {
+    color: #fff;
+    width: 33.3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    line-height: 1.6;
+    //white-space: normal;
+
+    &[data-align='left'] {
+      left: 65px;
+    }
+
+    &[data-align='right'] {
+      right: 65px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -1em; /* Adjusts for spacing */
+    }
+  }
+
+  .sb-amp-dc-banner-info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .sb-amp-dc-banner-header {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    //font-style: italic;
+    font-size: 80px;
+    //line-height: 1.4px;
+    //line-height: 13px;
+    //max-width: max-content;
+    //padding: 9px;
+    ////margin-top : -30px;
+    //position: absolute;
+    //left: 50%;
+    ////transform: translate(-50%, -50%);
+
+  }
+  .sb-amp-dc-banner-subheader {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    //line-height: 13px;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //margin-right: -50%;
+    //transform: translate(-50%, -50%);
+    //max-width: max-content;
+  }
+  .sb-amp-dc-banner-description{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    //text-transform: uppercase;
+    font-size: 17px;
+    font-style: italic;
+    //line-height: 13px;
+  }
+
+  .sb-amp-dc-banner-button {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    //text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px;
+    display: inline-block;
+    min-width: 40%;
+    padding: 17px 15px;
+    background: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing:2px;
+    //&.black {
+    //  background: #000;
+    //  color: #fff;
+    //}
+    //&.white {
+    //  background: #fff;
+    //  color: #000;
+    //}
+    color:white;
+  }
+
+}
+
+
+
+
+
+
+
+
