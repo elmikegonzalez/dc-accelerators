@@ -44,10 +44,13 @@
     &[data-align='left'] {
       left: 65px;
     }
-
     &[data-align='right'] {
       right: 65px;
     }
+    &[data-align='center'] {
+      right: 30px;
+    }
+
 
     &:before {
       content: '';

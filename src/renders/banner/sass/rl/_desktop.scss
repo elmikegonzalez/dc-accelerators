@@ -38,11 +38,13 @@
     //white-space: normal;
 
     &[data-align='left'] {
-      left: 65px;
+      left: 10%;
     }
-
     &[data-align='right'] {
-      right: 65px;
+      left: 60%;
+    }
+    &[data-align='center'] {
+      left: 35%;
     }
 
     &:before {
@@ -86,6 +88,15 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     max-width: max-content;
+    &[data-align='left'] {
+      text-align: left;
+    }
+    &[data-align='right'] {
+      text-align: center;
+    }
+    &[data-align='center'] {
+      text-align: right;
+    }
   }
   .rl-amp-dc-banner-description{
     font-family: interstate, sans-serif;
@@ -94,6 +105,15 @@
     //text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
+    &[data-align='left'] {
+      text-align: left;
+    }
+    &[data-align='right'] {
+      text-align: center;
+    }
+    &[data-align='center'] {
+      text-align: right;
+    }
   }
 
   .rl-amp-dc-banner-button {

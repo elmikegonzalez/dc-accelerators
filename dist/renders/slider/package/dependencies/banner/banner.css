@@ -111,16 +111,16 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .amp-dc-banner .amp-dc-banner-info-wrap {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -132,10 +132,10 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-info {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
     display: block;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-header {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
@@ -144,16 +144,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .amp-dc-banner .amp-dc-banner-info-wrap {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -165,17 +165,17 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-info {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
     display: block;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-header {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-subheader {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
@@ -184,16 +184,16 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .amp-dc-banner .amp-dc-banner-info-wrap {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
     width: 40%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -205,10 +205,10 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-info {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
     display: block;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom .amp-dc-banner-subheader {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
@@ -217,25 +217,25 @@
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  .amp-dc-banner .amp-dc-banner-info-wrap {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
     width: 50%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
     left: 20px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
     right: 20px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
     width: 100%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='left'] {
     left: 0;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='right'] {
     right: 0;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -246,17 +246,17 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-info {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
     display: block;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-header {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-subheader {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
@@ -266,25 +266,25 @@
 }
 
 @media screen and (max-width: 385px) {
-  .amp-dc-banner .amp-dc-banner-info-wrap {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
     left: 20px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
     right: 20px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
     width: 100%;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom[data-align='left'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='left'] {
     left: 0;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom[data-align='right'] {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='right'] {
     right: 0;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -295,17 +295,17 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-info {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
     display: block;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-header {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 12px;
   }
-  .amp-dc-banner .amp-dc-banner-info-wrap.amp-dc-info-bottom.amp-dc-info-bottom .amp-dc-banner-subheader {
+  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
     text-transform: uppercase;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;

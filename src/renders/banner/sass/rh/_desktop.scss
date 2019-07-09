@@ -40,11 +40,22 @@
     //white-space: normal;
 
     &[data-align='left'] {
-      left: 65px;
+      left: 10%;
     }
-
     &[data-align='right'] {
-      right: 65px;
+      left: 60%;
+    }
+    &[data-align='center'] {
+      left: 35%;
+    }
+    &[data-valign='top']{
+      top: 10%;
+    }
+    &[data-valign='middle']{
+      top: 50%;
+    }
+    &[data-valign='bottom']{
+      top: 35%;
     }
 
     &:before {
@@ -81,7 +92,6 @@
     //position: absolute;
     //left: 50%;
     ////transform: translate(-50%, -50%);
-
   }
   .rh-amp-dc-banner-subheader {
     font-family: adobe-caslon-pro,serif;
@@ -92,6 +102,15 @@
     line-height: 1.3em;
     margin-bottom: 1em;
     //max-width: max-content;
+    &[data-align='left'] {
+      text-align: left;
+    }
+    &[data-align='right'] {
+      text-align: right;
+    }
+    &[data-align='center'] {
+      text-align: center;
+    }
   }
   .rh-amp-dc-banner-description{
     text-transform: uppercase;
@@ -100,6 +119,16 @@
     //text-transform: uppercase;
     font-size: 17px;
     //line-height: 13px;
+    &[data-align='left'] {
+      text-align: left;
+    }
+
+    &[data-align='right'] {
+      text-align: right;
+    }
+    &[data-align='center'] {
+      text-align: center;
+    }
   }
 
   .rh-amp-dc-banner-button {
