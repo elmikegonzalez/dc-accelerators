@@ -38,11 +38,13 @@
     white-space: normal;
 
     &[data-align='left'] {
-      left: 65px;
+      left: 10%;
     }
-
     &[data-align='right'] {
-      right: 65px;
+      left: 60%;
+    }
+    &[data-align='center'] {
+      left: 35%;
     }
 
     &:before {
@@ -80,12 +82,30 @@
     font-style: normal;
     font-size: 87px;
     //font-size: 37px;
+    &[data-align='left'] {
+      text-align: left;
+    }
+    &[data-align='right'] {
+      text-align: center;
+    }
+    &[data-align='center'] {
+      text-align: right;
+    }
   }
   .thc-amp-dc-banner-description{
     font-family: brandon-grotesque, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    &[data-align='left'] {
+      text-align: left;
+    }
+    &[data-align='right'] {
+      text-align: center;
+    }
+    &[data-align='center'] {
+      text-align: right;
+    }
   }
 
   .thc-amp-dc-banner-button {

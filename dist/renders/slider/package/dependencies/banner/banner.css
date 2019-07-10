@@ -1,54 +1,67 @@
-.thc-amp-dc-banner {
+.rh-amp-dc-banner {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-hide {
+.rh-amp-dc-banner .rh-amp-dc-hide {
   display: none;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info {
-  font-size: 22px;
-  text-align: center;
+.rh-amp-dc-banner .rh-amp-dc-banner-info {
   background: #fff;
-  color: #000;
-  padding: 15px;
-  min-width: 200px;
+  padding: 0px 0px 15px 0px;
+  letter-spacing: 5px;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-pic {
+.rh-amp-dc-banner .rh-amp-dc-banner-pic {
   max-width: 100%;
   display: block;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-pic img {
+.rh-amp-dc-banner .rh-amp-dc-banner-pic img {
   width: 100%;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-img {
+.rh-amp-dc-banner .rh-amp-dc-banner-img {
   width: 100%;
   display: block;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
   color: #fff;
   width: 33.3%;
   height: 100%;
   position: absolute;
   top: 0;
-  white-space: normal;
+  line-height: 1.6;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
-  left: 65px;
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
+  left: 10%;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
-  right: 65px;
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
+  left: 60%;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info-wrap:before {
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='center'] {
+  left: 35%;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-valign='top'] {
+  top: 10%;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-valign='middle'] {
+  top: 50%;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-valign='bottom'] {
+  top: 35%;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-info-wrap:before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -57,70 +70,93 @@
   /* Adjusts for spacing */
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-info {
+.rh-amp-dc-banner .rh-amp-dc-banner-info {
   display: inline-block;
-  vertical-align: middle;
+  top: 5vw;
+  left: 5vw;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-header {
-  font-family: brandon-grotesque, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  padding: 9px;
-  margin-top: -30px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.thc-amp-dc-banner .thc-amp-dc-banner-subheader {
+.rh-amp-dc-banner .rh-amp-dc-banner-header {
   text-transform: uppercase;
-  font-family: brandon-grotesque, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 87px;
-}
-
-.thc-amp-dc-banner .thc-amp-dc-banner-description {
-  font-family: brandon-grotesque, sans-serif;
+  font-family: adobe-caslon-pro,serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 3.5vw;
+  line-height: 1em;
+  margin-bottom: .5rem;
+  letter-spacing: normal;
 }
 
-.thc-amp-dc-banner .thc-amp-dc-banner-button {
-  font-family: brandon-grotesque, sans-serif;
-  font-weight: 700;
+.rh-amp-dc-banner .rh-amp-dc-banner-subheader {
+  font-family: adobe-caslon-pro,serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 1.75vw;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-subheader[data-align='left'] {
+  text-align: left;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-subheader[data-align='right'] {
+  text-align: right;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-subheader[data-align='center'] {
+  text-align: center;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-description {
+  text-transform: uppercase;
+  font-family: adobe-caslon-pro,serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-description[data-align='left'] {
+  text-align: left;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-description[data-align='right'] {
+  text-align: right;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-description[data-align='center'] {
+  text-align: center;
+}
+
+.rh-amp-dc-banner .rh-amp-dc-banner-button {
+  text-transform: uppercase;
+  font-family: adobe-caslon-pro,serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 30px;
   display: inline-block;
-  min-width: 40%;
-  padding: 17px 15px;
-  background: black;
+  background-color: transparent;
   text-decoration: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  letter-spacing: 2px;
+  letter-spacing: .2px;
   color: white;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -132,28 +168,41 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-info {
     display: block;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-header {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    color: black !important;
+    font-size: 24px;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    color: black !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -165,35 +214,43 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-info {
     display: block;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-header {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 22px;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: black !important;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    color: black !important;
+    font-size: 28px;
+    text-align: center;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
     width: 40%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
     left: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
     right: 35px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -205,37 +262,51 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-info {
     display: block;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-header {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    font-size: 44px;
+    color: black !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
     font-style: normal;
+    color: black !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader #subheader[style] {
+    color: black !important;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
     width: 50%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
     left: 20px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
     right: 20px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom {
     width: 100%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom[data-align='left'] {
     left: 0;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom[data-align='right'] {
     right: 0;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -246,45 +317,48 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-info {
     display: block;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-header {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black !important;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    color: white !important;
   }
 }
 
 @media screen and (max-width: 385px) {
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap {
     width: 100%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap #opacity[style] {
+    opacity: 1 !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='left'] {
     left: 20px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap[data-align='right'] {
     right: 20px;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom {
     width: 100%;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='left'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom[data-align='left'] {
     left: 0;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom[data-align='right'] {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom[data-align='right'] {
     right: 0;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom {
     position: relative;
     top: 0 !important;
     left: 0 !important;
@@ -295,21 +369,24 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-info {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-info {
     display: block;
   }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-header {
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-header {
     text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 12px;
-  }
-  .thc-amp-dc-banner .thc-amp-dc-banner-info-wrap.thc-amp-dc-info-bottom.thc-amp-dc-info-bottom .thc-amp-dc-banner-subheader {
-    text-transform: uppercase;
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
     font-size: 22px;
+    color: black !important;
+  }
+  .rh-amp-dc-banner .rh-amp-dc-banner-info-wrap.rh-amp-dc-info-bottom.rh-amp-dc-info-bottom .rh-amp-dc-banner-subheader {
+    text-transform: uppercase;
+    font-family: adobe-caslon-pro,serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white !important;
+    font-size: 12px;
+    white-space: nowrap;
+    word-break: break-all;
   }
 }
