@@ -64,10 +64,12 @@ gulp.task('addContentTypes', ['build'], function (cb) {
     for (var module in dependencies) {
         // var moduleName = module.toLowerCase();
        var moduleName = module;
+       console.log('module: ', moduleName);
         gulp.
           src([
           './node_modules/dc-accelerators-content-types/*' + moduleName + '.json',
-          './node_modules/dc-accelerators-content-types/**/' + moduleName + '.json'
+          './node_modules/dc-accelerators-content-types/**/' + moduleName + '.json',
+          './node_modules/dc-accelerators-content-types/products/**/' + moduleName + '.json'
         ])
             .pipe(replace())
             .pipe(
@@ -76,10 +78,12 @@ gulp.task('addContentTypes', ['build'], function (cb) {
 
         if (contentDependencies[module]) {
             contentDependencies[module].forEach(function (dependency) {
+              console.log('dependency: ', dependency);
                 gulp.
                   src([
                     './node_modules/dc-accelerators-content-types/' + dependency + '.json',
-                    './node_modules/dc-accelerators-content-types/**/' + dependency + '.json'
+                    './node_modules/dc-accelerators-content-types/**/' + dependency + '.json',
+                  './node_modules/dc-accelerators-content-types/products/**/' + dependency + '.json',
                 ])
                     .pipe(replace())
                     .pipe(
