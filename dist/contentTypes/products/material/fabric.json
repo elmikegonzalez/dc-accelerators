@@ -1,0 +1,36 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/material/fabric.json",
+
+  "title": "Fabric",
+  "description": "Description",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "code": {
+      "title": "Fabric item code",
+      "description": "used at backend",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "details":{
+      "title":"Fabric Details",
+      "$ref":"https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/material.json#/definitions/material_details"
+    },
+    "color": {
+      "title": "Fabric Color Name",
+      "description": "short name for the fabric color",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 50
+    }
+  },
+  "propertyOrder": ["code","color","details"]
+}

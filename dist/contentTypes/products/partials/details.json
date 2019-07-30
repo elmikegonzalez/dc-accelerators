@@ -1,0 +1,29 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/details.json",
+
+  "definitions": {
+    "guide":{
+      "title": "Product Guide",
+      "description": "description",
+      "type": "object",
+      "properties": {
+        "details_label": {
+          "title": "label specific detail label",
+          "description": "Label for PDP for table specific details",
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 500
+        },
+        "details_link": {
+          "title": "details_link",
+          "description": "the link to seating plans etc",
+          "type": "string",
+          "minLength": 15,
+          "maxLength": 500
+        }
+      },
+      "propertyOrder": []
+    }
+  }
+}

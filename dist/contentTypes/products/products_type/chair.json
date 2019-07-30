@@ -1,0 +1,39 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product_type/chair.json",
+  "title": "Chair product type",
+  "description": "Product type for chairs",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "product_details": {
+      "title": "Product Details",
+      "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/base.json#/definitions/generic_details"
+    },
+    "product_options": {
+      "title": "Available Product Options",
+      "description": "Available customization options",
+      "type": "object",
+      "properties": {
+        "finishes": {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/finishes.json#/definitions/finishes"
+        },
+        "Stocked_fabrics": {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/fabrics.json#/definitions/fabrics"
+        },
+        "depth": {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/depths.json#/definitions/depths"
+        }
+      },
+      "propertyOrder": []
+    }
+  },
+  "propertyOrder": [
+    "product_details",
+    "product_options"
+  ]
+}

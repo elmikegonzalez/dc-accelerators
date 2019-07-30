@@ -1,9 +1,10 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product.json",
+
   "title": "product",
   "description": "Base product schema",
-  "propertyOrder": ["product_code","product_title","regular_price","member_price","product_description","product_details","product_dimensions","product_type", "product_options"],
+
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -76,8 +77,8 @@
           "properties": {
             "contentType": {
               "enum": [
-                "http://rh.com/products/product_type/table",
-                "http://rh.com/products/product_type/chair"
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product_type/table.json",
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product_type/chair.json"
               ]
             }
           }
@@ -86,20 +87,22 @@
     },
     "product_options": {
       "title": "Available Product Options",
-      "description": "Available customization options",
+      "description": "available customization options",
       "type": "object",
       "properties": {
         "finishes": {
-          "$ref": "http://rh.com/product/partials/finishes#/definitions/finishes"
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/finishes.json#/definitions/finishes"
         },
         "Stocked_fabrics": {
-          "$ref": "http://rh.com/product/partials/fabrics#/definitions/fabrics"
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/fabrics.json#/definitions/fabrics"
         },
         "depth": {
-          "$ref": "http://rh.com/product/partials/depths#/definitions/depths"
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/depths.json#/definitions/depths"
         }
       },
       "propertyOrder": []
     }
-  }
+
+  },
+  "propertyOrder": ["product_code","product_title","regular_price","member_price","product_description","product_details","product_dimensions","product_type", "product_options"]
 }

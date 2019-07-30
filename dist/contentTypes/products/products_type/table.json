@@ -1,0 +1,27 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/product_type/table.json",
+  "title": "Table product type",
+  "description": "Product type for tables",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "guide":{
+      "title": "guide",
+      "description": "description",
+      "properties": {
+        "guide": {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/details.json#/definitions/guide"
+        }
+      }
+    }
+
+  },
+  "propertyOrder": []
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/base.json",
+
+  "definitions": {
+    "generic_details":{
+      "title": "Product Information",
+      "description": "base level details for all products",
+      "type": "object",
+      "properties": {
+        "product_title": {
+          "title": "Product Title",
+          "description": "Main web title for the product",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 300
+        },
+
+        "regular_price": {
+          "title": "Regular price",
+          "description": "",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 200
+        },
+        "member_price": {
+          "title": "Member price",
+          "description": "",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 200
+        },
+        "product_code": {
+          "title": "Product Code",
+          "description": "The product number or code",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 40
+        },
+        "product_description": {
+          "title": "Product Description",
+          "description": "main product description",
+          "type": "string",
+          "format": "markdown",
+          "minLength": 0,
+          "maxLength": 2000
+        },
+        "product_details":{
+          "title": "List of Product Details",
+          "description": "list of product details",
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "type": "string"
+          }
+        },
+        "product_dimensions":{
+          "title": "List of Product Dimensions",
+          "description": "list of product dimensions",
+          "type": "string",
+          "format": "markdown"
+        },
+        "guide": {
+          "title": "Guide",
+          "description": "Guide if required",
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/details.json#/definitions/guide"
+        },
+        "thumbnail":{
+          "title": "Thumbnail",
+          "description": "Thumbnail image",
+          "maxItems": 1,
+          "allOf": [
+            { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+          ]
+        }
+      },
+      "propertyOrder": ["thumbnail","product_code","product_title","regular_price","member_price","product_description","product_details"]
+    }
+  }
+}

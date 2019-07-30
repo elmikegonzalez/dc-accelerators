@@ -1,0 +1,52 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/finishes.json",
+  "definitions": {
+    "finishes": {
+      "title": "Finishes",
+      "description": "List of finishes",
+      "type": "object",
+      "properties": {
+        "label": {
+          "title": "Display name for the finish list",
+          "description": "FINISHES",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 100
+        },
+        "finish_list": {
+          "title": "A list of finishes",
+          "description": "used to display the available finish options",
+          "type": "object",
+          "properties": {
+            "materials": {
+              "title": "finish",
+              "description": "",
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 100,
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                  },
+                  {
+                    "properties": {
+                      "contentType": {
+                        "enum": [
+                          "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/material/finish.json"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "propertyOrder": []
+        }
+      },
+      "propertyOrder": []
+    }
+  }
+}

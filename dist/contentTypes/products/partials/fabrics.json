@@ -1,0 +1,52 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/fabrics.json",
+  "definitions": {
+    "fabrics": {
+      "title": "Stocked Fabrics",
+      "description": "List of fabrics as standard",
+      "type": "object",
+      "properties": {
+        "label": {
+          "title": "Display name for the fabric list",
+          "description": "Fabrics",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 100
+        },
+        "fabric_list": {
+          "title": "A list of fabrics",
+          "description": "used to display the available fabric options",
+          "type": "object",
+          "properties": {
+            "materials": {
+              "title": "Fabric",
+              "description": "",
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 100,
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                  },
+                  {
+                    "properties": {
+                      "contentType": {
+                        "enum": [
+                          "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/material/fabric.json"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "propertyOrder": []
+        }
+      },
+      "propertyOrder": []
+    }
+  }
+}

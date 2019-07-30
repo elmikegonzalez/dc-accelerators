@@ -1,0 +1,35 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/material.json",
+
+  "definitions": {
+    "material_details":{
+      "title": "details",
+      "description": "description",
+      "type": "object",
+      "properties": {
+        "swatch":{
+          "title": "Swatch",
+          "description": "Swatch of the material",
+          "allOf": [
+            { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+          ]
+        },
+        "name": {
+          "title": "displayed name",
+          "description": "",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 100
+        },
+        "description": {
+          "title": "detailed description",
+          "description": "description",
+          "type": "string",
+          "format": "markdown"
+        }
+      },
+      "propertyOrder": ["swatch","name","description"]
+    }
+  }
+}

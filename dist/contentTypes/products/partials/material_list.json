@@ -1,0 +1,37 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/material_list.json",
+
+  "definitions": {
+    "material_list":{
+      "title": "A list of materials",
+      "description": "used to display the available options",
+      "type": "object",
+      "properties": {
+        "materials":{
+          "title": "list of materials",
+          "description": "",
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 100,
+          "items": {
+            "allOf": [
+              { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+              {
+                "properties": {
+                  "contentType": {
+                    "enum": [
+                      "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/material/finish.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "propertyOrder": []
+    }
+
+  }
+}

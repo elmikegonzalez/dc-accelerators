@@ -1,0 +1,24 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/products/partials/depths.json",
+  "definitions": {
+    "depths": {
+      "title": "Depth",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "depth": {
+          "title": "Depth of Seat",
+          "description": "",
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 5,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "propertyOrder": []
+    }
+  }
+}
