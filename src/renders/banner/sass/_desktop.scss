@@ -42,14 +42,24 @@
     white-space: normal;
 
     &[data-align='left'] {
-      left: 65px;
+      left: 10%;
     }
     &[data-align='right'] {
-      right: 65px;
+      left: 60%;
     }
     &[data-align='center'] {
-      right: 30px;
+      left: 35%;
     }
+    &[data-align='top'] {
+      top: -40%;
+    }
+    &[data-align='middle'] {
+      top:0;
+    }
+    &[data-align='bottom'] {
+      top: 35%;
+    }
+
 
 
     &:before {
@@ -86,7 +96,7 @@
  .amp-dc-banner-subheader {
    font-family: trade-gothic-next, sans-serif;
    font-weight: 700;
-   font-style: bold;
+   //font-style: bold;
    letter-spacing: 2px;
    font-size: 1.75vw;
    line-height: 1.3em;
