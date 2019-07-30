@@ -258,7 +258,7 @@
       "description": "Font size",
       "validation": "Please enter a value between 12 and 128px",
       "minimum": 12,
-      "maximum": 128
+      "maximum": 200
     },
     "headerFontWeight": {
       "type": "number",
@@ -320,7 +320,7 @@
       "description": "Font size",
       "validation": "Please enter a value between 12 and 128px",
       "minimum": 12,
-      "maximum": 128
+      "maximum": 200
     },
     "subheaderFontWeight": {
       "type": "number",
@@ -382,7 +382,7 @@
       "description": "Font size",
       "validation": "Please enter a value between 12 and 128px",
       "minimum": 12,
-      "maximum": 128
+      "maximum": 200
     },
     "descriptionFontWeight": {
       "type": "number",
