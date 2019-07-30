@@ -26,6 +26,19 @@
   "image": [
     "roundel"
   ],
+  "product": [
+    "table",
+    "chair",
+    "finishes",
+    "fabrics",
+    "depths",
+    "details",
+    "base",
+    "finish",
+    "fabric",
+    "material",
+    "material_list"
+  ],
   "promo": [
     "link"
   ],
