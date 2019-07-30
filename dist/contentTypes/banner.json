@@ -271,7 +271,12 @@
     "headerFontStyle": {
       "type": "string",
       "title": "Header Font Style",
-      "description": "Font Style"
+      "description": "Font Style",
+      "enum": [
+        "normal",
+        "italic",
+        "oblique"
+      ]
     },
     "subheaderFont": {
       "title": "Sub-Header Font",
@@ -328,7 +333,12 @@
     "subheaderFontStyle": {
       "type": "string",
       "title": "Sub-Header Font Style",
-      "description": "Font Style"
+      "description": "Font Style",
+      "enum": [
+        "normal",
+        "italic",
+        "oblique"
+      ]
     },
     "descriptionFont": {
       "title": "Description Font",
@@ -385,7 +395,12 @@
     "descriptionFontStyle": {
       "type": "string",
       "title": "Description Font Style",
-      "description": "Font Style"
+      "description": "Font Style",
+      "enum": [
+        "normal",
+        "italic",
+        "oblique"
+      ]
     }
   }
 }
