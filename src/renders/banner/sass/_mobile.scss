@@ -30,12 +30,12 @@
           display: block;
         }
         .amp-dc-banner-header {
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           //font-style: italic;
           color: black !important;
-          //font-size: 24px !important;
+          font-size: 12vw !important;
         }
         .amp-dc-banner-subheader {
           #subheader[style] {
@@ -46,7 +46,19 @@
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           color: black !important;
-          //font-size: 28px;
+          font-size: 10vw !important;
+        }
+        .amp-dc-banner-description {
+          //#subheader[style] {
+          //  color: black !important;
+          //}
+          //text-transform: uppercase;
+          //text-transform: uppercase;
+          font-family: adobe-caslon-pro,serif;
+          font-weight: 400;
+          font-style: normal;
+          color: black !important;
+          font-size: 4vw !important;
         }
       }
     }
@@ -82,23 +94,35 @@
           display: block;
         }
         .amp-dc-banner-header {
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           //font-style: italic;
           color: black !important;
-          //font-size: 24px !important;
+          font-size: 12vw !important;
         }
         .amp-dc-banner-subheader {
           #subheader[style] {
             color: black !important;
           }
           //text-transform: uppercase;
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           color: black !important;
-          //font-size: 28px;
+          font-size: 10vw !important;
+        }
+        .amp-dc-banner-description {
+          //#subheader[style] {
+          //  color: black !important;
+          //}
+          //text-transform: uppercase;
+          //text-transform: uppercase;
+          font-family: adobe-caslon-pro,serif;
+          font-weight: 400;
+          font-style: normal;
+          color: black !important;
+          font-size: 4vw !important;
         }
       }
     }
@@ -136,11 +160,11 @@
           display: block;
         }
         .amp-dc-banner-header {
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           //font-style: italic;
-          font-size: 48px;
+          font-size: 12vw !important;
           color: black !important;
         }
         .amp-dc-banner-subheader {
@@ -152,8 +176,20 @@
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           color: black !important;
-          font-size: 28px;
+          font-size: 10vw !important;
           text-align: center;
+        }
+        .amp-dc-banner-description {
+          //#subheader[style] {
+          //  color: black !important;
+          //}
+          //text-transform: uppercase;
+          //text-transform: uppercase;
+          font-family: adobe-caslon-pro,serif;
+          font-weight: 400;
+          font-style: normal;
+          color: black !important;
+          font-size: 4vw !important;
         }
       }
     }
@@ -191,11 +227,11 @@
           display: block;
         }
         .amp-dc-banner-header {
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           //font-style: italic;
-          font-size: 44px;
+          font-size: 12vw !important;
           color: black !important;
         }
         .amp-dc-banner-subheader {
@@ -203,13 +239,24 @@
             color: black !important;
           }
           //text-transform: uppercase;
-          text-transform: uppercase;
+          //text-transform: uppercase;
           font-family: adobe-caslon-pro,serif;
           font-weight: 400;
           font-style: normal;
           color: black !important;
-
-          //font-size: 24px;
+          font-size: 10vw !important;
+        }
+        .amp-dc-banner-description {
+          //#subheader[style] {
+          //  color: black !important;
+          //}
+          //text-transform: uppercase;
+          //text-transform: uppercase;
+          font-family: adobe-caslon-pro,serif;
+          font-weight: 400;
+          font-style: normal;
+          color: black !important;
+          font-size: 4vw !important;
         }
       }
     }
@@ -220,7 +267,7 @@
       //text-transform: uppercase;
       //font-family: adobe-caslon-pro,serif;
       //font-weight: 400;
-      font-size: 60px !important;
+      //font-size: 12vw !important;
     }
     .amp-dc-banner-info-wrap {
       #opacity[style] {
@@ -266,7 +313,7 @@
             font-family: adobe-caslon-pro,serif;
             font-weight: 400;
             //font-style: italic;
-            font-size: 60px !important;
+            font-size: 12vw !important;
             color: black !important;
           }
           .amp-dc-banner-subheader {
@@ -274,12 +321,24 @@
             //  color: black !important;
             //}
             //text-transform: uppercase;
-            text-transform: uppercase;
+            //text-transform: uppercase;
             font-family: adobe-caslon-pro,serif;
             font-weight: 400;
             font-style: normal;
-            color: white !important;
-            //font-size: 18px;
+            color: black !important;
+            font-size: 10vw !important;
+          }
+          .amp-dc-banner-description {
+            //#subheader[style] {
+            //  color: black !important;
+            //}
+            //text-transform: uppercase;
+            //text-transform: uppercase;
+            font-family: adobe-caslon-pro,serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black !important;
+            font-size: 4vw !important;
           }
         }
       }
