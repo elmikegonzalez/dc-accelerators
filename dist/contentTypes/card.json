@@ -11,7 +11,17 @@
   "propertyOrder": [
     "image",
     "cardName",
+    "cardNameFont",
+    "cardNameFontSize",
+    "cardNameFontWeight",
+    "cardNameFontStyle",
+    "cardNameFontColor",
     "description",
+    "descriptionFont",
+    "descriptionFontSize",
+    "descriptionFontWeight",
+    "descriptionFontStyle",
+    "descriptionFontColor",
     "linkValue",
     "link"
   ],
@@ -60,6 +70,142 @@
       "validation": "Please enter between 0 and 100 characters",
       "minLength": 0,
       "maxLength": 100
+    },
+    "descriptionFont": {
+      "title": "Description Font",
+      "description": "Pick from the list of available fonts",
+      "type": "string",
+      "enum": [
+        "proxima-nova",
+        "proxima-nova-condensed",
+        "proxima-nova-extra-condensed",
+        "chinchilla",
+        "continuo",
+        "grandma",
+        "alternate-gothic-no-2-d",
+        "josefin-slab",
+        "trajan-pro-3",
+        "azo-sans-uber",
+        "hwt-republic-gothic-outline",
+        "objektiv-mk1",
+        "old-man-eloquent",
+        "emily-austin",
+        "lamar-pen",
+        "mrs-eaves-xl-serif",
+        "termina",
+        "rift-soft",
+        "axia-stencil",
+        "farm-new",
+        "big-caslon-fb",
+        "bureau-grot",
+        "bureau-grot-condensed",
+        "miller-banner",
+        "odile",
+        "dapifer-stencil",
+        "active",
+        "bebas-neue-rounded",
+        "smoothy"
+      ]
+    },
+    "descriptionFontSize": {
+      "type": "number",
+      "title": "Description Font Size",
+      "description": "Font size",
+      "validation": "Please enter a value between 12 and 128px",
+      "minimum": 12,
+      "maximum": 200
+    },
+    "descriptionFontWeight": {
+      "type": "number",
+      "title": "Description Font Weight",
+      "description": "Font Weight",
+      "validation": "Please enter a value between 100 and 600",
+      "minimum": 100,
+      "maximum": 700
+    },
+    "descriptionFontStyle": {
+      "type": "string",
+      "title": "Description Font Style",
+      "description": "Font Style",
+      "enum": [
+        "normal",
+        "italic",
+        "oblique"
+      ]
+    },
+    "descriptionFontColor": {
+      "type": "string",
+      "format": "color",
+      "title": "Description Font Color",
+      "description": "Choose description font color"
+    },
+    "cardNameFont": {
+      "title": "CardName Font",
+      "description": "Pick from the list of available fonts",
+      "type": "string",
+      "enum": [
+        "proxima-nova",
+        "proxima-nova-condensed",
+        "proxima-nova-extra-condensed",
+        "chinchilla",
+        "continuo",
+        "grandma",
+        "alternate-gothic-no-2-d",
+        "josefin-slab",
+        "trajan-pro-3",
+        "azo-sans-uber",
+        "hwt-republic-gothic-outline",
+        "objektiv-mk1",
+        "old-man-eloquent",
+        "emily-austin",
+        "lamar-pen",
+        "mrs-eaves-xl-serif",
+        "termina",
+        "rift-soft",
+        "axia-stencil",
+        "farm-new",
+        "big-caslon-fb",
+        "bureau-grot",
+        "bureau-grot-condensed",
+        "miller-banner",
+        "odile",
+        "dapifer-stencil",
+        "active",
+        "bebas-neue-rounded",
+        "smoothy"
+      ]
+    },
+    "cardNameFontSize": {
+      "type": "number",
+      "title": "CardName Font Size",
+      "description": "Font size",
+      "validation": "Please enter a value between 12 and 128px",
+      "minimum": 12,
+      "maximum": 200
+    },
+    "cardNameFontWeight": {
+      "type": "number",
+      "title": "CardName Font Weight",
+      "description": "Font Weight",
+      "validation": "Please enter a value between 100 and 600",
+      "minimum": 100,
+      "maximum": 700
+    },
+    "cardNameFontStyle": {
+      "type": "string",
+      "title": "CardName Font Style",
+      "description": "Font Style",
+      "enum": [
+        "normal",
+        "italic",
+        "oblique"
+      ]
+    },
+    "cardNameFontColor": {
+      "type": "string",
+      "format": "color",
+      "title": "CardName Font Color",
+      "description": "Choose CardName font color"
     }
   }
 }
