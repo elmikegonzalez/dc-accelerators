@@ -1,0 +1,62 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/video.json",
+
+  "title": "Video",
+  "description": "Description",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "amplienceVideo",
+    "addYoutube",
+    "videoAutoLoop",
+    "videoAutoPlay",
+    "hidePlayButton",
+    "widescreen",
+    "backgroundFullScreen",
+    "backgroundEffect",
+    "videoThumbnail"
+  ],
+  "type": "object",
+  "properties": {
+    "addYoutube": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2000,
+      "title": "Add YouTube URL?",
+      "description": "Enter YouTube URL"
+    },
+    "backgroundFullScreen": {
+      "title": "Background video (auto play and loop)?",
+      "description": "Yes",
+      "type": "boolean"
+    },
+    "amplienceVideo": {
+      "title": "Video",
+      "description": "Select video",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+        }
+      ]
+    },
+    "videoThumbnail": {
+      "title": "Poster image",
+      "description": "Add image for video",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ]
+    },
+    "backgroundEffect": {
+      "title": "Add overlay effect?",
+      "description": "Yes",
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/splitblock.json",
+
+  "title": "Split block",
+  "description": "Split block content type",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "mainImage": {
+      "title": "Image",
+      "description": "Select or create an image content",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/image.json"
+        }
+      ]
+    },
+    "hasVideo": {
+      "title": "Include video?",
+      "description": "Yes",
+      "type": "boolean"
+    },
+    "video": {
+      "title": "Video",
+      "description": "Add a video",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/video.json"
+        }
+      ]
+    },
+    "switchAlignment": {
+      "title": "Align text to the right?",
+      "description": "Yes",
+      "type": "boolean"
+    },
+    "smallHeaderText": {
+      "title": "Small header",
+      "description": "Enter the text for the small header (above the main header)",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 75
+    },
+    "headerText": {
+      "title": "Header",
+      "description": "Enter the title text for the block",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 75
+    },
+    "headerFontWeight": {
+      "title": "Header Font Weight",
+      "description": "Specify a font weight",
+      "type": "string",
+      "enum": ["normal", "bold"]
+    },
+    "subHeaderText": {
+      "title": "Subheader",
+      "description": "Enter the subheader text for the block",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 400
+    },
+    "subHeaderFontWeight": {
+      "title": "Subheader Font Weight",
+      "description": "Specify a font weight",
+      "type": "string",
+      "enum": ["normal", "bold"]
+    },
+    "textBlock": {
+      "title": "Body Text",
+      "description": "Enter the main text to appear below the header",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 1000
+    },
+    "textFontWeight": {
+      "title": "Body Text Font Weight",
+      "description": "Specify a font weight",
+      "type": "string",
+      "enum": ["normal", "bold"]
+    },
+    "splitRatio": {
+      "title": "Block ratios",
+      "description": "Text width : image width",
+      "type": "string",
+      "enum": ["50 : 50", "60 : 40", "33 : 66"]
+    },
+    "link": {
+      "title": "Link",
+      "description": "Add a link",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 200
+    },
+    "linkText": {
+      "title": "Link text",
+      "description": "Add the link text",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "greyBackground": {
+      "title": "Grey background?",
+      "description": "Add a grey background",
+      "type": "boolean"
+    }
+  },
+  "propertyOrder": [
+    "splitRatio",
+    "switchAlignment",
+    "smallHeaderText",
+    "headerText",
+    "headerFontWeight",
+    "subHeaderText",
+    "subHeaderFontWeight",
+    "textBlock",
+    "textFontWeight",
+    "link",
+    "linkText",
+    "greyBackground",
+    "mainImage",
+    "hasVideo",
+    "video"
+  ]
+}

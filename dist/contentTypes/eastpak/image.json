@@ -1,0 +1,75 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/image.json",
+
+  "title": "Image",
+  "description": "Add an image",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "image": {
+      "title": "Image",
+      "description": "Add an image",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ]
+    },
+    "imageEffect": {
+      "title": "Image Effect",
+      "description": "Add an image effect",
+      "type": "string",
+      "enum": [
+        "Zoom-in dark",
+        "Zoom-in blur",
+        "Linear",
+        "Double-line Horizontal",
+        "Parallax"
+      ]
+    },
+    "imageAltText": {
+      "title": "Alt Text",
+      "description": "Add alternate text for the image",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "button": {
+      "title": "Button",
+      "description": "Add a button",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "enum": [
+                "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/button.json"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "gifImage": {
+      "title": "Gif image",
+      "description": "Is the image a gif?",
+      "type": "boolean"
+    },
+    "togglePOI": {
+      "title": "toggle POI",
+      "description": "toggle POI?",
+      "type": "boolean"
+    }
+  },
+
+  "propertyOrder": []
+}

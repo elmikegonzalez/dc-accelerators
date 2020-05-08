@@ -1,0 +1,90 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/eastpak/button.json",
+
+  "title": "Button",
+  "description": "Add a button",
+
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+
+  "type": "object",
+  "properties": {
+    "buttonLabel": {
+      "title": "Button Label",
+      "description": "Label for the button",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "buttonLink": {
+      "title": "Button Link",
+      "description": "Link for the button",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "buttonStyle": {
+      "title": "Button Style",
+      "description": "Style for the button",
+      "type": "string",
+      "enum": [
+        "black",
+        "white",
+        "hollow",
+        "tiny",
+        "small",
+        "large",
+        "expanded",
+        "primary",
+        "secondary"
+      ]
+    },
+    "buttonTransition":{
+      "title": "Button Transition",
+      "description": "Transition Effect",
+      "type": "string",
+      "enum": [
+        "hvr-grow",
+        "hvr-shrink",
+        "hvr-float",
+        "hvr-forward",
+        "hvr-fade",
+        "hvr-shutter-out-horizontal",
+        "hvr-shutter-out-vertical",
+        "hvr-icon-forward",
+        "hvr-icon-fade",
+        "hvr-trim",
+        "hvr-hollow",
+        "hvr-underline-reveal"
+      ]
+    },
+    "buttonFontWeight":{
+      "title": "Font Weight",
+      "description": "Specify a font weight",
+      "type": "string",
+      "enum": [
+        "normal",
+        "bold"
+      ]
+    },
+    "buttonBackgroundColour": {
+      "title": "Button Background Colour Override",
+      "description": "Choose a background colour only if you wish to override default",
+      "format": "color",
+      "type": "string"
+    },
+    "buttonForegroundColour": {
+      "title": "Button Text Colour Override",
+      "description": "Choose a text colour only if you wish to override default",
+      "format": "color",
+      "type": "string"
+    }
+
+
+  },
+  "propertyOrder": []
+}
