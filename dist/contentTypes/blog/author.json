@@ -1,0 +1,41 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/blog/author.json",
+  "title": "Author",
+  "description": "Author schema",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "Author name",
+      "description": "Name of the author",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "avatar": {
+      "title": "Avatar",
+      "description": "The author's avatar",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "image",
+              "enum": ["https://presalesadisws.s3.amazonaws.com/demo/maic/baja/dist/contentTypes/image.json"]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "propertyOrder": ["name", "avatar"],
+  "required": ["name"]
+}
