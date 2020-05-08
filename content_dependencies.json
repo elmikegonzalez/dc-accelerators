@@ -1,6 +1,7 @@
 {
   "banner": [
-    "link"
+    "link",
+    "button"
   ],
   "blog": [
     "blogSnippet"
@@ -8,6 +9,9 @@
   "blogSnippet":[
     "image",
     "link"
+  ],
+  "blog-post":[
+    "author"
   ],
   "container":[
     "slider",

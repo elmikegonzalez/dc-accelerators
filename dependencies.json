@@ -1,7 +1,10 @@
 {
   "banner": [
-    "link"
+    "link",
+    "button"
   ],
+  "blog-post":[],
+  "blog-list":[],
   "blog": [
     "text",
     "image",
@@ -41,6 +44,10 @@
     "video",
     "text"
   ],
+  "splitblock": [
+    "image",
+    "video"
+  ],
   "text": [],
   "ugc":[],
   "video": [],
@@ -48,5 +55,6 @@
   "sfcc-dc-slot": [],
   "banner-slot": [],
   "emailbannersvg": [],
-  "sfmc-dc-slot": []
+  "sfmc-dc-slot": [],
+  "blog-slot":[]
 }
