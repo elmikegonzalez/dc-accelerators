@@ -69,7 +69,9 @@ gulp.task('addContentTypes', ['build'], function (cb) {
           src([
           './node_modules/dc-accelerators-content-types/*' + moduleName + '.json',
           './node_modules/dc-accelerators-content-types/**/' + moduleName + '.json',
-          './node_modules/dc-accelerators-content-types/products/**/' + moduleName + '.json'
+          './node_modules/dc-accelerators-content-types/products/**/' + moduleName + '.json',
+          './node_modules/dc-accelerators-content-types/eastpak/**/' + moduleName + '.json',
+          './node_modules/dc-accelerators-content-types/blog/**/' + moduleName + '.json',
         ])
             .pipe(replace())
             .pipe(
@@ -83,7 +85,9 @@ gulp.task('addContentTypes', ['build'], function (cb) {
                   src([
                     './node_modules/dc-accelerators-content-types/' + dependency + '.json',
                     './node_modules/dc-accelerators-content-types/**/' + dependency + '.json',
-                  './node_modules/dc-accelerators-content-types/products/**/' + dependency + '.json',
+                    './node_modules/dc-accelerators-content-types/products/**/' + dependency + '.json',
+                  './node_modules/dc-accelerators-content-types/eastpak/**/' + dependency + '.json',
+                    './node_modules/dc-accelerators-content-types/blog/**/' + dependency + '.json',
                 ])
                     .pipe(replace())
                     .pipe(
