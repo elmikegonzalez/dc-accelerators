@@ -85,11 +85,11 @@ gulp.task('addContentTypes', ['build'], function (cb) {
     }, 500)
 
 });
-
+//add dynamic content types bucket to properties file
 gulp.task("upload-content-types", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentTypes/loreal', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentTypes/ulta', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -97,11 +97,11 @@ gulp.task("upload-content-types", function() {
         maxRetries: 5
       }));
 });
-
+//add icons bucket to properties file
 gulp.task("upload-icons", function() {
   gulp.src("./dist/icons/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/Icons/loreal', //  Required
+        Bucket: 'dev-solutions/maic/Icons/ulta', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {
@@ -113,7 +113,7 @@ gulp.task("upload-icons", function() {
 gulp.task("upload-content-slots", function() {
   gulp.src("./dist/contentTypes/**")
     .pipe(s3({
-        Bucket: 'dev-solutions/maic/DynamicContentSlots/loreal', //  Required
+        Bucket: 'dev-solutions/maic/DynamicContentSlots/ulta', //  Required
         ACL:    'public-read'       //  Needs to be user-defined
       },
       {

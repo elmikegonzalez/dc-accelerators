@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/image.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/ulta/image.json",
   "title": "Image",
   "description": "Image Accelerator",
   "allOf": [
@@ -46,7 +46,7 @@
       "description": "Roundel Image",
       "type": "array",
       "items": {
-        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/roundel.json"
+        "$ref": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/ulta/roundel.json"
       },
       "minItems": 0,
       "maxItems": 4,
@@ -55,7 +55,7 @@
     "display": {
       "type": "string",
       "title": "Display type",
-      "description": "How the image should display (Point of Interest, Hotspots, served staticaly (ie, animated GIF)",
+      "description": "How the image should display (Point of Interest, Hotspots, served statically (ie, animated GIF)",
       "enum": [
         "Point of Interest",
         "Hotspots",

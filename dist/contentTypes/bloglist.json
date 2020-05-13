@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/bloglist.json",
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/ulta/bloglist.json",
   "title": "Blog Listing Page",
   "description": "Content Type to populate a blog listing page",
   "allOf": [
@@ -28,7 +28,7 @@
               "contentType": {
                 "title": "content",
                 "enum": [
-                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/loreal/blog.json"
+                  "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/ulta/blog.json"
                 ]
               }
             }
